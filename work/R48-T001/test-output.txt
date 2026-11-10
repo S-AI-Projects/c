@@ -1,0 +1,25 @@
+Compiling tests.out
+./test_grade_school.c:322:test_roster_is_empty_when_no_student_added:PASS
+./test_grade_school.c:323:test_add_student:PASS
+./test_grade_school.c:324:test_student_added_to_roster:PASS
+./test_grade_school.c:325:test_adding_multiple_students_in_same_grade_in_roster:PASS
+./test_grade_school.c:326:test_multiple_students_in_same_grade_are_added_to_roster:PASS
+./test_grade_school.c:327:test_cannot_add_student_to_same_grade_more_than_once:PASS
+./test_grade_school.c:328:test_student_not_added_to_same_grade_in_roster_more_than_once:PASS
+./test_grade_school.c:329:test_adding_students_in_multiple_grades:PASS
+./test_grade_school.c:330:test_students_in_multiple_grades_are_added_to_roster:PASS
+./test_grade_school.c:331:test_cannot_add_same_student_to_multiple_grades_in_roster:PASS
+./test_grade_school.c:332:test_student_not_added_to_multiple_grades_in_roster:PASS
+./test_grade_school.c:333:test_students_are_sorted_by_grades_in_roster:PASS
+./test_grade_school.c:334:test_students_are_sorted_by_name_in_roster:PASS
+./test_grade_school.c:335:test_students_are_sorted_by_grades_and_then_by_names_in_roster:PASS
+./test_grade_school.c:336:test_grade_empty_if_no_students_in_roster:PASS
+./test_grade_school.c:337:test_grade_empty_if_no_students_in_grade:PASS
+./test_grade_school.c:338:test_student_not_added_to_same_grade_more_than_once:PASS
+./test_grade_school.c:339:test_student_not_added_to_multiple_grades:PASS
+./test_grade_school.c:340:test_student_not_added_to_other_grade_for_multiple_grades:PASS
+./test_grade_school.c:341:test_students_are_sorted_by_name_in_grade:PASS
+
+-----------------------
+20 Tests 0 Failures 0 Ignored
+OK
