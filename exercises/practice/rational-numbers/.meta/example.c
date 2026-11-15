@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <math.h>
 
-static float nth_root(float x, float n)
+// Calculate the n-th root of a floating-point number using fractional exponentiation
+static float nth_root(float base_value, float root_degree)
 {
-   return pow(x, 1. / n);
+    return pow(base_value, 1.0f / root_degree);
 }
 
 static int16_t greatest_common_divisor(int n, int m)
