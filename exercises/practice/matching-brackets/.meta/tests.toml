@@ -11,12 +11,15 @@
 
 [81ec11da-38dd-442a-bcf9-3de7754609a5]
 description = "paired square brackets"
+comment = "Validates proper nesting and matching of square brackets."
 
 [287f0167-ac60-4b64-8452-a0aa8f4e5238]
 description = "empty string"
+comment = "Handles empty input strings returning true as valid matching."
 
 [6c3615a3-df01-4130-a731-8ef5f5d78dac]
 description = "unpaired brackets"
+comment = "Detects mismatched or unpaired brackets returning false."
 
 [9d414171-9b98-4cac-a4e5-941039a97a77]
 description = "wrong ordered brackets"
