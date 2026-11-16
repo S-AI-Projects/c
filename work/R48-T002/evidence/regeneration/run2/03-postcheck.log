@@ -1,0 +1,6 @@
+$ <CONFIGLET> --track-dir <TRACK> sync --exercise wordy --offline --tests
+exit code: 0
+--- stdout ---
+Checking exercises...
+The `wordy` exercise has up-to-date tests!
+--- stderr ---

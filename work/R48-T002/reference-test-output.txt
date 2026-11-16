@@ -1,0 +1,28 @@
+Compiling tests.out
+./test_wordy.c:230:test_just_a_number:[42mPASS[00m
+./test_wordy.c:231:test_addition:[42mPASS[00m
+./test_wordy.c:232:test_more_addition:[42mPASS[00m
+./test_wordy.c:233:test_addition_with_negative_numbers:[42mPASS[00m
+./test_wordy.c:234:test_large_addition:[42mPASS[00m
+./test_wordy.c:235:test_subtraction:[42mPASS[00m
+./test_wordy.c:236:test_multiplication:[42mPASS[00m
+./test_wordy.c:237:test_division:[42mPASS[00m
+./test_wordy.c:238:test_multiple_additions:[42mPASS[00m
+./test_wordy.c:239:test_addition_and_subtraction:[42mPASS[00m
+./test_wordy.c:240:test_multiple_subtraction:[42mPASS[00m
+./test_wordy.c:241:test_subtraction_then_addition:[42mPASS[00m
+./test_wordy.c:242:test_multiple_multiplication:[42mPASS[00m
+./test_wordy.c:243:test_addition_and_multiplication:[42mPASS[00m
+./test_wordy.c:244:test_multiple_division:[42mPASS[00m
+./test_wordy.c:245:test_unknown_operation:[42mPASS[00m
+./test_wordy.c:246:test_non_math_question:[42mPASS[00m
+./test_wordy.c:247:test_reject_a_problem_missing_an_operand:[42mPASS[00m
+./test_wordy.c:248:test_reject_problem_with_no_operands_or_operators:[42mPASS[00m
+./test_wordy.c:249:test_reject_two_operations_in_a_row:[42mPASS[00m
+./test_wordy.c:250:test_reject_two_numbers_in_a_row:[42mPASS[00m
+./test_wordy.c:251:test_reject_postfix_notation:[42mPASS[00m
+./test_wordy.c:252:test_reject_prefix_notation:[42mPASS[00m
+
+-----------------------
+23 Tests 0 Failures 0 Ignored 
+[42mOK[00m

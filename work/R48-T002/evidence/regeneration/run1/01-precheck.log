@@ -1,0 +1,11 @@
+$ <CONFIGLET> --track-dir <TRACK> sync --exercise wordy --offline --tests
+exit code: 1
+--- stdout ---
+Checking exercises...
+[warn] wordy: missing 4 test cases
+       - just a zero (18983214-1dfc-4ebd-ac77-c110dde699ce)
+       - just a negative number (607c08ee-2241-4288-916d-dae5455c87e6)
+       - addition with a left hand zero (bb9f2082-171c-46ad-ad4e-c3f72087c1b5)
+       - addition with a right hand zero (6fa05f17-405a-4742-80ae-5d1a8edb0d5d)
+[warn] some exercises are missing test cases
+--- stderr ---

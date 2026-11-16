@@ -1,0 +1,80 @@
+R48-T002 regeneration round-trip comparison
+===========================================
+== Generate twice, independently ==
+[INFO] configlet 4.0.3; problem-specifications @ 84a96854db1b
+[INFO] command: configlet --track-dir <TRACK> sync --exercise wordy --offline --update --tests include
+[INFO] normalization rule: none (configlet emits no timestamp; outputs compared byte for byte)
+[PASS] run 1: generation commands succeeded and reached a fixed point: pre-check, regenerate and post-check behaved as expected
+[PASS] run 2: generation commands succeeded and reached a fixed point: pre-check, regenerate and post-check behaved as expected
+
+== Compare ==
+[PASS] both runs began from identical inputs
+[PASS] run 1: generation changed only .meta/tests.toml: changed: ['.meta/tests.toml']
+[PASS] run 2: generation changed only .meta/tests.toml: changed: ['.meta/tests.toml']
+[PASS] tests.toml is byte-identical across the two runs: 2613 bytes each
+[PASS] complete exercise trees are identical across the two runs
+[PASS] run 1: no baseline case disappeared: all 23 baseline cases retained
+[PASS] run 1: regenerated cases equal canonical cases: 27 cases
+[PASS] run 1: descriptions match canonical data
+[PASS] run 1: maintained keys (include/comment/...) preserved
+[PASS] run 2: no baseline case disappeared: all 23 baseline cases retained
+[PASS] run 2: regenerated cases equal canonical cases: 27 cases
+[PASS] run 2: descriptions match canonical data
+[PASS] run 2: maintained keys (include/comment/...) preserved
+
+== Drift between baseline and regenerated tests.toml (informational) ==
+[DRIFT] 4 canonical case(s) are not in the baseline tests.toml and were added by regeneration:
+[DRIFT]     + 18983214-1dfc-4ebd-ac77-c110dde699ce  'just a zero'
+[DRIFT]     + 607c08ee-2241-4288-916d-dae5455c87e6  'just a negative number'
+[DRIFT]     + bb9f2082-171c-46ad-ad4e-c3f72087c1b5  'addition with a left hand zero'
+[DRIFT]     + 6fa05f17-405a-4742-80ae-5d1a8edb0d5d  'addition with a right hand zero'
+[DRIFT] header comment differs from what this configlet writes (not normalized)
+
+== Environment integrity ==
+[PASS] original exercise tree is untouched
+[PASS] track config.json is untouched
+[PASS] problem-specifications checkout was not modified
+
+--- diff: run1 vs run2 (empty means byte-identical) ---
+(no differences)
+
+--- diff: baseline (committed) tests.toml vs run1 (expected drift) ---
+--- baseline/tests.toml
++++ run1/tests.toml
+@@ -1,12 +1,31 @@
+-# This is an auto-generated file. Regular comments will be removed when this
+-# file is regenerated. Regenerating will not touch any manually added keys,
+-# so comments can be added in a "comment" key.
++# This is an auto-generated file.
++#
++# Regenerating this file via `configlet sync` will:
++# - Recreate every `description` key/value pair
++# - Recreate every `reimplements` key/value pair, where they exist in problem-specifications
++# - Remove any `include = true` key/value pair (an omitted `include` key implies inclusion)
++# - Preserve any other key/value pair
++#
++# As user-added comments (using the # character) will be removed when this file
++# is regenerated, comments can be added via a `comment` key.
+ 
+ [88bf4b28-0de3-4883-93c7-db1b14aa806e]
+ description = "just a number"
+ 
++[18983214-1dfc-4ebd-ac77-c110dde699ce]
++description = "just a zero"
++
++[607c08ee-2241-4288-916d-dae5455c87e6]
++description = "just a negative number"
++
+ [bb8c655c-cf42-4dfc-90e0-152fcfd8d4e0]
+ description = "addition"
++
++[bb9f2082-171c-46ad-ad4e-c3f72087c1b5]
++description = "addition with a left hand zero"
++
++[6fa05f17-405a-4742-80ae-5d1a8edb0d5d]
++description = "addition with a right hand zero"
+ 
+ [79e49e06-c5ae-40aa-a352-7a3a01f70015]
+ description = "more addition"
+
+RESULT: PASS

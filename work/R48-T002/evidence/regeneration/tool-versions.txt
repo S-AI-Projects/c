@@ -1,0 +1,5 @@
+python: 3.13.18
+configlet: 4.0.3
+configlet_sha256: 082daca08f50481e076d8dcdd903e37d51b0e309e91c5a872f0db6208663fc2e
+problem_specifications_head: 84a96854db1bda581317164d3e6ac6aa01723182
+normalization_rule: none (configlet emits no timestamp; outputs compared byte for byte)

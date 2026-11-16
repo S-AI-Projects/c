@@ -1,0 +1,4 @@
+Negative controls (failures here are EXPECTED and prove the checks can fail)
+A3 mutation: `plus` made to subtract in the scratch reference -> harness must fail
+B2 phantom: a case absent from canonical data added to the baseline -> must be reported
+B2 failures raised by the control: ['run 1: no baseline case disappeared', 'run 2: no baseline case disappeared']

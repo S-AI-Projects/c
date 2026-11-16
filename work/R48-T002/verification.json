@@ -1,0 +1,233 @@
+{
+  "checks": {
+    "generation_roundtrip": {
+      "case_count": 23,
+      "case_ids": [
+        "0035bc63-ac43-4bb5-ad6d-e8651b7d954e",
+        "0d86474a-cd93-4649-a4fa-f6109a011191",
+        "10a56c22-e0aa-405f-b1d2-c642d9c4c9de",
+        "30bc8395-5500-4712-a0cf-1d788a529be5",
+        "312d908c-f68f-42c9-aa75-961623cc033f",
+        "34c36b08-8605-4217-bb57-9a01472c427f",
+        "38e33587-8940-4cc1-bc28-bfd7e3966276",
+        "3ad3e433-8af7-41ec-aa9b-97b42ab49357",
+        "3c854f97-9311-46e8-b574-92b60d17d394",
+        "42d78b5f-dbd7-4cdb-8b30-00f794bb24cf",
+        "4b3df66d-6ed5-4c95-a0a1-d38891fbdab6",
+        "4f4a5749-ef0c-4f60-841f-abcfaf05d2ae",
+        "6abd7a50-75b4-4665-aa33-2030fd08bab1",
+        "79e49e06-c5ae-40aa-a352-7a3a01f70015",
+        "7fd74c50-9911-4597-be09-8de7f2fea2bb",
+        "88bf4b28-0de3-4883-93c7-db1b14aa806e",
+        "8a7e85a8-9e7b-4d46-868f-6d759f4648f8",
+        "b120ffd5-bad6-4e22-81c8-5512e8faf905",
+        "b345dbe0-f733-44e1-863c-5ae3568f3803",
+        "bb8c655c-cf42-4dfc-90e0-152fcfd8d4e0",
+        "c2c3cbfc-1a72-42f2-b597-246e617e66f5",
+        "cd070f39-c4cc-45c4-97fb-1be5e5846f87",
+        "da6d2ce4-fb94-4d26-8f5f-b078adad0596"
+      ],
+      "comparison": {
+        "case_ids_retained": true,
+        "generated_test_identical": true,
+        "identical_inputs": true,
+        "tests_toml_identical": true,
+        "unexpected_differences": []
+      },
+      "generator": "root makefile target `make wordy`",
+      "maintained_input_sha256": {
+        "exercises/practice/wordy/.docs/instructions.md": "b9e24dd95b27fa04f706e4dd9e5c7f430684b1af13a1cfde34faee705300aeee",
+        "exercises/practice/wordy/.meta/config.json": "b7f38edcf3ccb317b39f6ebbc4eb0db2c5a49746f8d2247cc24f030cb4204df1",
+        "exercises/practice/wordy/.meta/example.c": "68d8dcce385595acb9c5b81f61e519d8931c4ec2ce3f45d9ec3cf3c74008e16d",
+        "exercises/practice/wordy/.meta/example.h": "f7a29f11a753f695ef62b96194fcdf8e54899c0943f70395a30ac4b8e162e54d",
+        "exercises/practice/wordy/.meta/tests.toml": "2b8707bb18f88c95f651c9b3e9a32a822a1e2c8b47f1199c2d8c8774e649c542",
+        "exercises/practice/wordy/makefile": "3d6e1605f78cc829f5fa3210fefe1aa4d36ccddb1633c417ce1791f9ccd70a33",
+        "exercises/practice/wordy/test-framework/unity.c": "dfbbddc69499979994d5c536e7303ab2eec39243d60b078d998c8138ee6b9a61",
+        "exercises/practice/wordy/test-framework/unity.h": "c5f8f6458ed9d380fde28421a50ca1aea1861484d625ca4f224c1f7246c25eb0",
+        "exercises/practice/wordy/test-framework/unity_internals.h": "6f8ebe5f102269d3bfbbd19198e45b37d92255a85f9d604091c49c535d15a950",
+        "exercises/practice/wordy/test_wordy.c": "bd952316eec76bf942634f571831d1cd5b49c84fe1a614178ec844884cd5f929",
+        "exercises/practice/wordy/wordy.c": "c081cb93ff10d286261d422a9f6d938ad5068ed839d335082ab17d1bf8712dcb",
+        "exercises/practice/wordy/wordy.h": "46971eb99dbdc8c3b18818e474f485619d2ce72cecc15a9851c28d926cdac890",
+        "makefile": "a1930a8af92d0a9740a5a61faddbfde4e96c9e5729938d0ada79016b13cc13ab"
+      },
+      "metadata_behavior": "The target does not generate tests.toml; it remains byte-identical to the maintained input.",
+      "runs": [
+        {
+          "command": [
+            "make",
+            "wordy"
+          ],
+          "exit_code": 0,
+          "generated_test_path": "build/exercises/practice/wordy/test_wordy.c",
+          "generated_test_registrations": [
+            "test_just_a_number",
+            "test_addition",
+            "test_more_addition",
+            "test_addition_with_negative_numbers",
+            "test_large_addition",
+            "test_subtraction",
+            "test_multiplication",
+            "test_division",
+            "test_multiple_additions",
+            "test_addition_and_subtraction",
+            "test_multiple_subtraction",
+            "test_subtraction_then_addition",
+            "test_multiple_multiplication",
+            "test_addition_and_multiplication",
+            "test_multiple_division",
+            "test_unknown_operation",
+            "test_non_math_question",
+            "test_reject_a_problem_missing_an_operand",
+            "test_reject_problem_with_no_operands_or_operators",
+            "test_reject_two_operations_in_a_row",
+            "test_reject_two_numbers_in_a_row",
+            "test_reject_postfix_notation",
+            "test_reject_prefix_notation"
+          ],
+          "generated_test_sha256": "34d1188fcbfabfe66447897e3a751e81c5dc5caca411bd9381068dc13de52e6a",
+          "input_hashes": {
+            "exercises/practice/wordy/.docs/instructions.md": "b9e24dd95b27fa04f706e4dd9e5c7f430684b1af13a1cfde34faee705300aeee",
+            "exercises/practice/wordy/.meta/config.json": "b7f38edcf3ccb317b39f6ebbc4eb0db2c5a49746f8d2247cc24f030cb4204df1",
+            "exercises/practice/wordy/.meta/example.c": "68d8dcce385595acb9c5b81f61e519d8931c4ec2ce3f45d9ec3cf3c74008e16d",
+            "exercises/practice/wordy/.meta/example.h": "f7a29f11a753f695ef62b96194fcdf8e54899c0943f70395a30ac4b8e162e54d",
+            "exercises/practice/wordy/.meta/tests.toml": "2b8707bb18f88c95f651c9b3e9a32a822a1e2c8b47f1199c2d8c8774e649c542",
+            "exercises/practice/wordy/makefile": "3d6e1605f78cc829f5fa3210fefe1aa4d36ccddb1633c417ce1791f9ccd70a33",
+            "exercises/practice/wordy/test-framework/unity.c": "dfbbddc69499979994d5c536e7303ab2eec39243d60b078d998c8138ee6b9a61",
+            "exercises/practice/wordy/test-framework/unity.h": "c5f8f6458ed9d380fde28421a50ca1aea1861484d625ca4f224c1f7246c25eb0",
+            "exercises/practice/wordy/test-framework/unity_internals.h": "6f8ebe5f102269d3bfbbd19198e45b37d92255a85f9d604091c49c535d15a950",
+            "exercises/practice/wordy/test_wordy.c": "bd952316eec76bf942634f571831d1cd5b49c84fe1a614178ec844884cd5f929",
+            "exercises/practice/wordy/wordy.c": "c081cb93ff10d286261d422a9f6d938ad5068ed839d335082ab17d1bf8712dcb",
+            "exercises/practice/wordy/wordy.h": "46971eb99dbdc8c3b18818e474f485619d2ce72cecc15a9851c28d926cdac890",
+            "makefile": "a1930a8af92d0a9740a5a61faddbfde4e96c9e5729938d0ada79016b13cc13ab"
+          },
+          "output_file": "generation-run-1.txt",
+          "run": 1,
+          "tests_toml_sha256": "2b8707bb18f88c95f651c9b3e9a32a822a1e2c8b47f1199c2d8c8774e649c542",
+          "unity_summaries": [
+            {
+              "failures": 0,
+              "ignored": 0,
+              "tests": 23
+            },
+            {
+              "failures": 0,
+              "ignored": 0,
+              "tests": 23
+            }
+          ]
+        },
+        {
+          "command": [
+            "make",
+            "wordy"
+          ],
+          "exit_code": 0,
+          "generated_test_path": "build/exercises/practice/wordy/test_wordy.c",
+          "generated_test_registrations": [
+            "test_just_a_number",
+            "test_addition",
+            "test_more_addition",
+            "test_addition_with_negative_numbers",
+            "test_large_addition",
+            "test_subtraction",
+            "test_multiplication",
+            "test_division",
+            "test_multiple_additions",
+            "test_addition_and_subtraction",
+            "test_multiple_subtraction",
+            "test_subtraction_then_addition",
+            "test_multiple_multiplication",
+            "test_addition_and_multiplication",
+            "test_multiple_division",
+            "test_unknown_operation",
+            "test_non_math_question",
+            "test_reject_a_problem_missing_an_operand",
+            "test_reject_problem_with_no_operands_or_operators",
+            "test_reject_two_operations_in_a_row",
+            "test_reject_two_numbers_in_a_row",
+            "test_reject_postfix_notation",
+            "test_reject_prefix_notation"
+          ],
+          "generated_test_sha256": "34d1188fcbfabfe66447897e3a751e81c5dc5caca411bd9381068dc13de52e6a",
+          "input_hashes": {
+            "exercises/practice/wordy/.docs/instructions.md": "b9e24dd95b27fa04f706e4dd9e5c7f430684b1af13a1cfde34faee705300aeee",
+            "exercises/practice/wordy/.meta/config.json": "b7f38edcf3ccb317b39f6ebbc4eb0db2c5a49746f8d2247cc24f030cb4204df1",
+            "exercises/practice/wordy/.meta/example.c": "68d8dcce385595acb9c5b81f61e519d8931c4ec2ce3f45d9ec3cf3c74008e16d",
+            "exercises/practice/wordy/.meta/example.h": "f7a29f11a753f695ef62b96194fcdf8e54899c0943f70395a30ac4b8e162e54d",
+            "exercises/practice/wordy/.meta/tests.toml": "2b8707bb18f88c95f651c9b3e9a32a822a1e2c8b47f1199c2d8c8774e649c542",
+            "exercises/practice/wordy/makefile": "3d6e1605f78cc829f5fa3210fefe1aa4d36ccddb1633c417ce1791f9ccd70a33",
+            "exercises/practice/wordy/test-framework/unity.c": "dfbbddc69499979994d5c536e7303ab2eec39243d60b078d998c8138ee6b9a61",
+            "exercises/practice/wordy/test-framework/unity.h": "c5f8f6458ed9d380fde28421a50ca1aea1861484d625ca4f224c1f7246c25eb0",
+            "exercises/practice/wordy/test-framework/unity_internals.h": "6f8ebe5f102269d3bfbbd19198e45b37d92255a85f9d604091c49c535d15a950",
+            "exercises/practice/wordy/test_wordy.c": "bd952316eec76bf942634f571831d1cd5b49c84fe1a614178ec844884cd5f929",
+            "exercises/practice/wordy/wordy.c": "c081cb93ff10d286261d422a9f6d938ad5068ed839d335082ab17d1bf8712dcb",
+            "exercises/practice/wordy/wordy.h": "46971eb99dbdc8c3b18818e474f485619d2ce72cecc15a9851c28d926cdac890",
+            "makefile": "a1930a8af92d0a9740a5a61faddbfde4e96c9e5729938d0ada79016b13cc13ab"
+          },
+          "output_file": "generation-run-2.txt",
+          "run": 2,
+          "tests_toml_sha256": "2b8707bb18f88c95f651c9b3e9a32a822a1e2c8b47f1199c2d8c8774e649c542",
+          "unity_summaries": [
+            {
+              "failures": 0,
+              "ignored": 0,
+              "tests": 23
+            },
+            {
+              "failures": 0,
+              "ignored": 0,
+              "tests": 23
+            }
+          ]
+        }
+      ],
+      "timestamp_normalization": "none; no generated timestamp is present",
+      "tool_versions": {
+        "c_compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+        "make": "GNU Make 3.81",
+        "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+        "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "python_executable": "/opt/homebrew/opt/python@3.15/bin/python3.15"
+      }
+    },
+    "reference_tests": {
+      "command": [
+        "make",
+        "test"
+      ],
+      "exit_code": 0,
+      "expected_case_count": 23,
+      "hidden_directories_copied": [
+        ".docs",
+        ".meta"
+      ],
+      "ignore_markers_removed": 22,
+      "output_file": "reference-test-output.txt",
+      "reference_files": [
+        {
+          "destination": "wordy.c",
+          "source": ".meta/example.c"
+        },
+        {
+          "destination": "wordy.h",
+          "source": ".meta/example.h"
+        }
+      ],
+      "summary": {
+        "failures": 0,
+        "ignored": 0,
+        "tests": 23
+      }
+    }
+  },
+  "exercise": "exercises/practice/wordy",
+  "status": "passed",
+  "task": "R48-T002",
+  "tool_versions": {
+    "c_compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+    "make": "GNU Make 3.81",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "python_executable": "/opt/homebrew/opt/python@3.15/bin/python3.15"
+  }
+}

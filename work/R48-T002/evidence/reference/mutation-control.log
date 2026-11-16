@@ -1,0 +1,31 @@
+$ make test
+exit code: 2
+Compiling tests.out
+./test_wordy.c:252:test_just_a_number:PASS
+./test_wordy.c:30:test_addition:FAIL: Expected 2 Was 0
+./test_wordy.c:41:test_more_addition:FAIL: Expected 55 Was 51
+./test_wordy.c:52:test_addition_with_negative_numbers:FAIL: Expected -11 Was 9
+./test_wordy.c:63:test_large_addition:FAIL: Expected 45801 Was -45555
+./test_wordy.c:257:test_subtraction:PASS
+./test_wordy.c:258:test_multiplication:PASS
+./test_wordy.c:259:test_division:PASS
+./test_wordy.c:107:test_multiple_additions:FAIL: Expected 3 Was -1
+./test_wordy.c:118:test_addition_and_subtraction:FAIL: Expected 8 Was -2
+./test_wordy.c:262:test_multiple_subtraction:PASS
+./test_wordy.c:140:test_subtraction_then_addition:FAIL: Expected 14 Was 8
+./test_wordy.c:264:test_multiple_multiplication:PASS
+./test_wordy.c:162:test_addition_and_multiplication:FAIL: Expected -8 Was 20
+./test_wordy.c:266:test_multiple_division:PASS
+./test_wordy.c:267:test_unknown_operation:PASS
+./test_wordy.c:268:test_non_math_question:PASS
+./test_wordy.c:269:test_reject_a_problem_missing_an_operand:PASS
+./test_wordy.c:270:test_reject_problem_with_no_operands_or_operators:PASS
+./test_wordy.c:271:test_reject_two_operations_in_a_row:PASS
+./test_wordy.c:272:test_reject_two_numbers_in_a_row:PASS
+./test_wordy.c:273:test_reject_postfix_notation:PASS
+./test_wordy.c:274:test_reject_prefix_notation:PASS
+
+-----------------------
+23 Tests 8 Failures 0 Ignored 
+FAIL
+make: *** [makefile:22: test] Error 8

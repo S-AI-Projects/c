@@ -1,0 +1,3 @@
+01-precheck: <CONFIGLET> --track-dir <TRACK> sync --exercise wordy --offline --tests  -> exit 1
+02-regenerate: <CONFIGLET> --track-dir <TRACK> sync --exercise wordy --offline --update --tests include  -> exit 0
+03-postcheck: <CONFIGLET> --track-dir <TRACK> sync --exercise wordy --offline --tests  -> exit 0
