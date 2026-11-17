@@ -4,6 +4,7 @@
 
 [c51ee736-d001-4f30-88d1-0c8e8b43cd07]
 description = "input cells have a value"
+comment = "runner: reference is substituted only in a temporary copy; react.c and react.h in the working tree are never modified. The temp dir is cleaned up on success, assertion failure, and zero-test runs."
 
 [dedf0fe0-da0c-4d5d-a582-ffaf5f4d0851]
 description = "an input cell's value can be set"

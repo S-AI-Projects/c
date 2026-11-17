@@ -1,0 +1,22 @@
+{
+  "task": "R48-T029",
+  "exercise": "react",
+  "success_run": {
+    "tests": 14,
+    "failures": 0,
+    "ignored": 0,
+    "exit": 0
+  },
+  "broken_run": {
+    "exit": 2,
+    "failures": -1,
+    "status": "correctly failed"
+  },
+  "zero_test_run": {
+    "tests": 0,
+    "status": "correctly zero"
+  },
+  "learner_hashes_stable": true,
+  "comment_key_present": true,
+  "status": "PASS"
+}
