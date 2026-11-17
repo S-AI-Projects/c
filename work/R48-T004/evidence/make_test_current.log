@@ -1,0 +1,14 @@
+Compiling tests.out
+./test_difference_of_squares.c:61:test_square_of_sum_1:PASS
+./test_difference_of_squares.c:62:test_square_of_sum_5:PASS
+./test_difference_of_squares.c:63:test_square_of_sum_100:PASS
+./test_difference_of_squares.c:64:test_sum_of_squares_1:PASS
+./test_difference_of_squares.c:65:test_sum_of_squares_5:PASS
+./test_difference_of_squares.c:66:test_sum_of_squares_100:PASS
+./test_difference_of_squares.c:67:test_difference_of_squares_1:PASS
+./test_difference_of_squares.c:68:test_difference_of_squares_5:PASS
+./test_difference_of_squares.c:69:test_difference_of_squares_100:PASS
+
+-----------------------
+9 Tests 0 Failures 0 Ignored 
+OK

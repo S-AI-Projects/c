@@ -1,0 +1,8 @@
+python: 3.15.2
+platform: macOS-27.0.1-arm64-arm-64bit-Mach-O
+cc: Apple clang version 21.0.0 (clang-2100.3.34.2)
+gcc: Apple clang version 21.0.0 (clang-2100.3.34.2)
+make: GNU Make 3.81
+git: git version 2.56.0
+clang-format: not available
+unity.c sha256: dfbbddc69499979994d5c536e7303ab2eec39243d60b078d998c8138ee6b9a61

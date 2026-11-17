@@ -1,0 +1,17 @@
+Compiling tests.out
+Undefined symbols for architecture arm64:
+  "_difference_of_squares", referenced from:
+      _test_difference_of_squares_1 in <tmp>.o
+      _test_difference_of_squares_5 in <tmp>.o
+      _test_difference_of_squares_100 in <tmp>.o
+  "_square_of_sum", referenced from:
+      _test_square_of_sum_1 in <tmp>.o
+      _test_square_of_sum_5 in <tmp>.o
+      _test_square_of_sum_100 in <tmp>.o
+  "_sum_of_squares", referenced from:
+      _test_sum_of_squares_1 in <tmp>.o
+      _test_sum_of_squares_5 in <tmp>.o
+      _test_sum_of_squares_100 in <tmp>.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [tests.out] Error 1
