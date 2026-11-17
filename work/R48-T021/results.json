@@ -1,0 +1,44 @@
+{
+  "task_id": "R48-T021",
+  "exercise": "resistor-color",
+  "tools": {
+    "python": "3.14.6",
+    "cc": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "make": "GNU Make 3.81"
+  },
+  "learner_stub_unsolved": true,
+  "canonical_counts": {
+    "total_cases": 4,
+    "included_cases": 4,
+    "excluded_cases": 0,
+    "changed_inclusions": 0
+  },
+  "uuids_rationales": {
+    "49eb31c5-10a8-4180-9f7f-fea632ab87ef": {
+      "description": "Black",
+      "comment": "test_black: tests lower boundary condition where BLACK enum value maps to 0; color_code(BLACK) casts the enum constant to uint16_t returning 0."
+    },
+    "0a4df94b-92da-4579-a907-65040ce0b3fc": {
+      "description": "White",
+      "comment": "test_white: tests upper boundary condition where WHITE enum value maps to 9; color_code(WHITE) casts the enum constant to uint16_t returning 9."
+    },
+    "5f81608d-f36f-4190-8084-f45116b6f380": {
+      "description": "Orange",
+      "comment": "test_orange: tests an intermediate band value where ORANGE enum maps to 3; color_code(ORANGE) casts the enum constant to uint16_t returning 3."
+    }
+  },
+  "test_results": {
+    "expected_tests": 4,
+    "actual_tests_run": 4,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_black",
+      "test_white",
+      "test_orange",
+      "test_colors"
+    ],
+    "exit_code": 0
+  },
+  "status": "SUCCESS"
+}
