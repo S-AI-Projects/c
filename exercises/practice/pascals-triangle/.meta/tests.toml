@@ -4,6 +4,7 @@
 
 [9920ce55-9629-46d5-85d6-4201f4a4234d]
 description = "zero rows"
+comment = "test_no_rows: smallest input allowed by specification (rows=0); contract requires returning an allocated 1x1 array with {0} rather than NULL, and free_triangle(actual, 1) frees it."
 
 [70d643ce-a46d-4e93-af58-12d88dd01f21]
 description = "single row"

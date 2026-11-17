@@ -1,0 +1,31 @@
+{
+  "task_id": "R48-T023",
+  "exercise": "pascals-triangle",
+  "tools": {
+    "python": "3.14.6",
+    "cc": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "make": "GNU Make 3.81"
+  },
+  "learner_stub_unsolved": true,
+  "smallest_input": "rows=0",
+  "rejecting_case": "test_no_rows",
+  "original_run": {
+    "exit_code": 0,
+    "tests_run": 8,
+    "failures": 0,
+    "ignored": 0,
+    "status": "PASS"
+  },
+  "mutant_run": {
+    "exit_code": 2,
+    "failing_test": "test_no_rows",
+    "assertion_failure": "Expected TRUE Was FALSE",
+    "status": "REJECTED_AS_EXPECTED"
+  },
+  "free_triangle_analysis": {
+    "mutant": "omit row deallocation loop",
+    "suite_misses": true,
+    "proposed_case_documented": true
+  },
+  "status": "SUCCESS"
+}
