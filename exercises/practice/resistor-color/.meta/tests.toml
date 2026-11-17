@@ -4,12 +4,16 @@
 
 [49eb31c5-10a8-4180-9f7f-fea632ab87ef]
 description = "Black"
+comment = "test_black: tests lower boundary condition where BLACK enum value maps to 0; color_code(BLACK) casts the enum constant to uint16_t returning 0."
 
 [0a4df94b-92da-4579-a907-65040ce0b3fc]
 description = "White"
+comment = "test_white: tests upper boundary condition where WHITE enum value maps to 9; color_code(WHITE) casts the enum constant to uint16_t returning 9."
 
 [5f81608d-f36f-4190-8084-f45116b6f380]
 description = "Orange"
+comment = "test_orange: tests an intermediate band value where ORANGE enum maps to 3; color_code(ORANGE) casts the enum constant to uint16_t returning 3."
 
 [581d68fa-f968-4be2-9f9d-880f2fb73cf7]
 description = "Colors"
+comment = "test_colors: tests listing all color bands; colors() returns a pointer to an array containing all 10 resistor_band_t values in ascending index order."
