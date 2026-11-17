@@ -37,3 +37,4 @@ description = "cross"
 
 [04a260f1-b40a-4e89-839e-8dd8525abe0e]
 description = "large minefield"
+comment = "test_annotate_large_minefield: 5x5 board (25 cells); set_single_field runs in O(1) time up to 9 times per mine, with total calls strictly bounded by 9*M where M is mine count."

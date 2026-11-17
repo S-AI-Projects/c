@@ -1,0 +1,64 @@
+{
+  "task_id": "R48-T025",
+  "exercise": "minesweeper",
+  "tools": {
+    "python": "3.14.6",
+    "cc": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "make": "GNU Make 3.81"
+  },
+  "learner_stub_unsolved": true,
+  "set_single_field_cost": {
+    "complexity": "O(1)",
+    "operations_per_call": "1 read, 1 branch, 1 increment, 1 write",
+    "calls_per_mine_bound": 9,
+    "total_calls_bound": "9 * M"
+  },
+  "cost_separation": {
+    "compilation_time_ms": 95.17,
+    "process_total_ms": 398.63,
+    "algorithm_in_process": {
+      "small_median_us": 0.0,
+      "med_median_us": 0.0,
+      "large_median_us": 1.0
+    }
+  },
+  "benchmarked_sizes": {
+    "small": {
+      "cells": 7,
+      "mines": 3,
+      "median_us": 0.0
+    },
+    "medium": {
+      "cells": 9,
+      "mines": 1,
+      "median_us": 0.0
+    },
+    "large": {
+      "cells": 36,
+      "mines": 7,
+      "median_us": 1.0
+    }
+  },
+  "test_results": {
+    "expected_tests": 12,
+    "actual_tests_run": 12,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_annotate_no_rows",
+      "test_annotate_no_columns",
+      "test_annotate_no_mines",
+      "test_annotate_minefield_with_only_mines",
+      "test_annotate_mine_surrounded_by_spaces",
+      "test_annotate_space_surrounded_by_mines",
+      "test_annotate_horizontal_line",
+      "test_annotate_horizontal_line_mines_at_edges",
+      "test_annotate_vertical_line",
+      "test_annotate_vertical_line_mines_at_edges",
+      "test_annotate_cross",
+      "test_annotate_large_minefield"
+    ],
+    "exit_code": 0
+  },
+  "status": "SUCCESS"
+}
