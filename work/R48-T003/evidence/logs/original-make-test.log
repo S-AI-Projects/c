@@ -1,0 +1,21 @@
+# original reference, all cases enabled
+$ make --no-print-directory -C <SCRATCH> test
+exit code: 0
+Compiling tests.out
+./test_palindrome_products.c:247:test_smallest_palindrome_from_single_digit_factors:PASS
+./test_palindrome_products.c:248:test_largest_palindrome_from_single_digit_factors:PASS
+./test_palindrome_products.c:250:test_smallest_palindrome_from_double_digit_factors:PASS
+./test_palindrome_products.c:251:test_largest_palindrome_from_double_digit_factors:PASS
+./test_palindrome_products.c:253:test_smallest_palindrome_from_triple_digit_factors:PASS
+./test_palindrome_products.c:254:test_largest_palindrome_from_triple_digit_factors:PASS
+./test_palindrome_products.c:256:test_smallest_palindrome_from_four_digit_factors:PASS
+./test_palindrome_products.c:257:test_largest_palindrome_from_four_digit_factors:PASS
+./test_palindrome_products.c:259:test_empty_result_for_smallest_if_no_palindrome_in_the_range:PASS
+./test_palindrome_products.c:260:test_empty_result_for_largest_if_no_palindrome_in_the_range:PASS
+./test_palindrome_products.c:262:test_error_result_for_smallest_if_min_is_more_than_max:PASS
+./test_palindrome_products.c:263:test_error_result_for_largest_if_min_is_more_than_max:PASS
+./test_palindrome_products.c:265:test_smallest_product_not_using_smallest_factor:PASS
+
+-----------------------
+13 Tests 0 Failures 0 Ignored 
+OK

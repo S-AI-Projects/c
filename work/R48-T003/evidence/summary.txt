@@ -1,0 +1,62 @@
+== 1. Exercise files resolved from .meta/config.json ==
+[INFO] solution: palindrome_products.c, palindrome_products.h
+[INFO] test:     test_palindrome_products.c
+[INFO] example:  .meta/example.c -> palindrome_products.c, .meta/example.h -> palindrome_products.h
+[PASS] tests.toml includes one case per RUN_TEST in the test file: 13 == 13
+[PASS] named test ID exists in tests.toml with the expected description: 0853f82c-5fc4-44ae-be38-fadb2cced92d = 'find the largest palindrome from single digit factors'
+[PASS] named test function is defined and run in the test file: test_largest_palindrome_from_single_digit_factors
+
+== 2. Maintained reference passes every enabled case ==
+[INFO] scratch copy: reference substituted, 12 TEST_IGNORE line(s) disabled, 13 RUN_TEST calls
+[PASS] `make test` exits 0 and every case passes: executed 13 case(s), 0 failures, 0 ignored
+
+== 3. Learner stub is still unsolved ==
+[PASS] stub fails the full suite (it is not a solution): `make test` exit code 2
+
+== 4. The harness rejects a zero-test run, a failing child process and an assertion failure ==
+[PASS] zero-test run is rejected: child exit 0, but: zero tests executed
+[PASS] non-zero child exit is rejected (build error control): child exit code 2; no Unity summary line (nothing was executed)
+
+== 5. Mutant M1: numbers ending in 0 are accepted as palindromes (trailing-zero guard removed) ==
+[PASS] mutation changes code, not just formatting or comments, and stays small: 10 token(s) changed
+[PASS] mutant fails the suite: non-zero exit and the same number of cases executed: exit 2; executed 13 case(s), 6 failed
+[PASS] mutant fails the named case 0853f82c (test_largest_palindrome_from_single_digit_factors): 'Expected 9 Was 40'
+[INFO] other cases that also reject M1: largest_palindrome_from_triple_digit_factors, smallest_palindrome_from_double_digit_factors, smallest_palindrome_from_four_digit_factors, smallest_palindrome_from_triple_digit_factors, smallest_product_not_using_smallest_factor
+
+== 6. Original vs mutants on identical inputs (diagnostic driver) ==
+[INFO] 1891 ranges per implementation (0 <= min <= max <= 60), ordered by max then width; same input file for every build
+[PASS] M1 on get_palindrome_product(2, 5): explicit expectation = independent oracle = original: smallest=4 {2x2}  largest=9 {3x3}
+[PASS] M1 on get_palindrome_product(2, 5): mutant differs, as documented: smallest=4 {2x2}  largest=20 {4x5}
+[PASS] M1: documented input is the smallest differing range: no smaller range with min >= 1 and max <= 60 separates them
+[PASS] M2 on get_palindrome_product(0, 1): explicit expectation = independent oracle = original: smallest=0 {0x0, 0x1}  largest=1 {1x1}
+[PASS] M2 on get_palindrome_product(0, 1): mutant differs, as documented: ERROR 'no palindrome with factors in the range 0 to 1'
+[PASS] M2: documented input is the smallest differing range: no smaller range with min >= 0 and max <= 60 separates them
+[PASS] M9 on get_palindrome_product(12, 21): explicit expectation = independent oracle = original: smallest=252 {12x21, 14x18}  largest=323 {17x19}
+[PASS] M9 on get_palindrome_product(12, 21): mutant differs, as documented: smallest=252 {12x21}  largest=323 {17x19}
+[PASS] M9: documented input is the smallest differing range: no smaller range with min >= 1 and max <= 60 separates them
+[PASS] M12 on get_palindrome_product(1, 2): explicit expectation = independent oracle = original: smallest=1 {1x1}  largest=4 {2x2}
+[PASS] M12 on get_palindrome_product(1, 2): mutant differs, as documented: smallest=1 {1x1}  largest=2 {1x2}
+[PASS] M12: documented input is the smallest differing range: no smaller range with min >= 1 and max <= 60 separates them
+
+== 7. Mutants the existing 13 cases do not reject (proposed cases above separate them) ==
+[NOTE] M2 (0 is not a palindrome): passes all existing cases, so the suite does not distinguish it
+[NOTE] M9 (only the first factor pair is kept for the smallest palindrome): passes all existing cases, so the suite does not distinguish it
+[NOTE] M12 (the square of the upper bound is never tried): passes all existing cases, so the suite does not distinguish it
+
+== 8. Observation about the reference itself (informational, never a failure) ==
+[NOTE] 179 of 1891 ranges: the reference answers 'no palindrome' although the independent oracle finds one; reference returned a different value in 0 ranges
+[NOTE] get_palindrome_product(1, 1): reference ERROR 'no palindrome with factors in the range 1 to 1' | oracle smallest=1 {1x1}  largest=1 {1x1}
+[NOTE] get_palindrome_product(24, 29): reference ERROR 'no palindrome with factors in the range 24 to 29' | oracle smallest=676 {26x26}  largest=696 {24x29}
+
+== 9. Hint and maintenance page agree with the evidence ==
+[PASS] hints.md exists: exercises/practice/palindrome-products/.docs/hints.md
+[PASS] maintenance page exists: docs/maintenance/palindrome-products.md
+[PASS] hint gives the small diagnostic input: get_palindrome_product(2, 5)
+[PASS] hint does not reproduce reference code: no reference line of 20+ characters appears
+[PASS] hint contains no code block
+[PASS] maintenance page records the mutants, probes, test ID and assertion: 11 items found
+
+== 10. Working tree untouched ==
+[PASS] exercise directory (learner stub, tests, reference, metadata) unchanged: 13 files hashed before and after
+
+RESULT: PASS

@@ -1,0 +1,64 @@
+{
+  "all_cases_enabled_by": "commenting out every TEST_IGNORE(); in the scratch copy",
+  "cases_executed_original": 13,
+  "config_paths": {
+    "example": [
+      ".meta/example.c",
+      ".meta/example.h"
+    ],
+    "solution": [
+      "palindrome_products.c",
+      "palindrome_products.h"
+    ],
+    "test": [
+      "test_palindrome_products.c"
+    ]
+  },
+  "exercise": "exercises/practice/palindrome-products",
+  "make_command": "make --no-print-directory -C <scratch> test",
+  "minimal_input_search": {
+    "domain": "0 <= min <= max <= 60",
+    "filter": "reference output must equal the independent oracle",
+    "order": "max ascending, then width ascending"
+  },
+  "mutants": {
+    "M1": {
+      "probe": [
+        2,
+        5
+      ],
+      "rejected_by_existing_suite": "test_largest_palindrome_from_single_digit_factors",
+      "title": "numbers ending in 0 are accepted as palindromes (trailing-zero guard removed)"
+    },
+    "M12": {
+      "probe": [
+        1,
+        2
+      ],
+      "rejected_by_existing_suite": null,
+      "title": "the square of the upper bound is never tried"
+    },
+    "M2": {
+      "probe": [
+        0,
+        1
+      ],
+      "rejected_by_existing_suite": null,
+      "title": "0 is not a palindrome"
+    },
+    "M9": {
+      "probe": [
+        12,
+        21
+      ],
+      "rejected_by_existing_suite": null,
+      "title": "only the first factor pair is kept for the smallest palindrome"
+    }
+  },
+  "named_case": {
+    "assertion": "Expected 9 Was 40",
+    "description": "find the largest palindrome from single digit factors",
+    "function": "test_largest_palindrome_from_single_digit_factors",
+    "uuid": "0853f82c-5fc4-44ae-be38-fadb2cced92d"
+  }
+}
