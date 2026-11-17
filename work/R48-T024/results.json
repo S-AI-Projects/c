@@ -1,0 +1,38 @@
+{
+  "task_id": "R48-T024",
+  "exercise": "space-age",
+  "tools": {
+    "python": "3.14.6",
+    "cc": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "make": "GNU Make 3.81"
+  },
+  "learner_stub_unsolved": true,
+  "readability_improvement": {
+    "target_function": "is_planet",
+    "renamed_state": "result -> is_valid_planet",
+    "added_constructs": [
+      "break;",
+      "default: is_valid_planet = false; break;"
+    ],
+    "api_preserved": true
+  },
+  "test_results": {
+    "expected_tests": 9,
+    "actual_tests_run": 9,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_age_on_earth",
+      "test_age_on_mercury",
+      "test_age_on_venus",
+      "test_age_on_mars",
+      "test_age_on_jupiter",
+      "test_age_on_saturn",
+      "test_age_on_uranus",
+      "test_age_on_neptune",
+      "test_invalid_planet_causes_error"
+    ],
+    "exit_code": 0
+  },
+  "status": "SUCCESS"
+}

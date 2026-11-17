@@ -18,7 +18,7 @@ static const float factors[8] = {
 
 static bool is_planet(planet_t planet)
 {
-   bool result = false;
+   bool is_valid_planet = false;
 
    switch (planet) {
       case MERCURY:
@@ -29,10 +29,14 @@ static bool is_planet(planet_t planet)
       case SATURN:
       case URANUS:
       case NEPTUNE:
-         result = true;
+         is_valid_planet = true;
+         break;
+      default:
+         is_valid_planet = false;
+         break;
    }
 
-   return result;
+   return is_valid_planet;
 }
 
 float age(planet_t planet, int64_t seconds)
