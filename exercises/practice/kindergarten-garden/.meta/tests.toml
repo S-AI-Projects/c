@@ -11,6 +11,7 @@
 
 [1fc316ed-17ab-4fba-88ef-3ae78296b692]
 description = "partial garden -> garden with single student"
+comment = "metadata: config.json files.solution=[kindergarten_garden.c,kindergarten_garden.h], files.test=[test_kindergarten_garden.c], files.example=[.meta/example.c,.meta/example.h]; all paths are relative to exercises/practice/kindergarten-garden and must resolve inside it. The runner finds tests.toml and example.c via the .meta/ subdirectory, not by filename search."
 
 [acd19dc1-2200-4317-bc2a-08f021276b40]
 description = "partial garden -> different garden with single student"
