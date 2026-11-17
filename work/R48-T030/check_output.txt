@@ -1,0 +1,4 @@
+Task R48-T030 — scrabble-score
+Tests run: 11, Failures: 0, Ignored: 0
+Decision table cases: 11 verified
+Status: PASS

@@ -7,6 +7,7 @@ description = "lowercase letter"
 
 [f7794b49-f13e-45d1-a933-4e48459b2201]
 description = "uppercase letter"
+comment = "contract: case insensitivity is required; uppercase 'A' scores 1, identical to lowercase 'a'."
 
 [eaba9c76-f9fa-49c9-a1b0-d1ba3a5b31fa]
 description = "valuable letter"
@@ -25,12 +26,15 @@ description = "medium, valuable word"
 
 [9336f0ba-9c2b-4fa0-bd1c-2e2d328cf967]
 description = "long, mixed-case word"
+comment = "contract: mixed-case words require character-by-character normalization (tolower); letters must score identically regardless of casing."
 
 [1e34e2c3-e444-4ea7-b598-3c2b46fd2c10]
 description = "english-like word"
 
 [4efe3169-b3b6-4334-8bae-ff4ef24a7e4f]
 description = "empty input"
+comment = "contract: empty string \"\" contains 0 letters and evaluates to 0; loops terminate immediately on the null terminator."
 
 [3b305c1c-f260-4e15-a5b5-cb7d3ea7c3d7]
 description = "entire alphabet available"
+comment = "contract: all 26 ASCII letters [a-z] sum to 87 points. Non-alphabetic inputs, punctuation, and NULL pointers are outside the exercise specification."
