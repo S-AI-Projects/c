@@ -14,6 +14,7 @@ description = "Empty RNA sequence results in no proteins"
 
 [96d3d44f-34a2-4db4-84cd-fff523e069be]
 description = "Methionine RNA sequence"
+comment = "hint: codon 'AUG' can be resolved via linear table lookup (struct array with strncmp) or via integer bit-packing (switch on ((c1<<16)|(c2<<8)|c3)); table lookup is easier to extend with new codons while bit-packing eliminates runtime string comparisons and heap overhead."
 
 [1b4c56d8-d69f-44eb-be0e-7b17546143d9]
 description = "Phenylalanine RNA sequence 1"
