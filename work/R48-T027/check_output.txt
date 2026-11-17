@@ -1,0 +1,4 @@
+Task R48-T027 — hamming
+Tests run: 9, Failures: 0, Ignored: 0
+Micro-checks: 4/4 passed
+Status: PASS

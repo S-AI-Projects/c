@@ -1,0 +1,44 @@
+{
+  "task": "R48-T027",
+  "exercise": "hamming",
+  "tests_run": 9,
+  "failures": 0,
+  "ignored": 0,
+  "micro_checks": [
+    {
+      "input": [
+        "GAGCCTACTAACGGGAT",
+        "CATCGTAATGACGGCCT"
+      ],
+      "expected": 7,
+      "got": 7
+    },
+    {
+      "input": [
+        "AAAG",
+        "AAA"
+      ],
+      "expected": -1,
+      "got": -1
+    },
+    {
+      "input": [
+        null,
+        "ATG"
+      ],
+      "expected": -1,
+      "got": -1
+    },
+    {
+      "input": [
+        "",
+        ""
+      ],
+      "expected": 0,
+      "got": 0
+    }
+  ],
+  "maintenance_md_present": true,
+  "comment_key_present": true,
+  "status": "PASS"
+}

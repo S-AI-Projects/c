@@ -4,6 +4,7 @@
 
 [f6dcb64f-03b0-4b60-81b1-3c9dbf47e887]
 description = "empty strands"
+comment = "guidance: compute() uses strlen() on null-terminated const char* to find each strand's length; no explicit length is passed. Pitfall: a char array declared without a null terminator (e.g. char buf[3]={'A','T','G'}) causes undefined behavior when passed to compute()."
 
 [54681314-eee2-439a-9db0-b0636c656156]
 description = "single letter identical strands"
