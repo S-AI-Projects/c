@@ -1,0 +1,78 @@
+{
+  "task": "R48-T030",
+  "exercise": "scrabble-score",
+  "tests_run": 11,
+  "failures": 0,
+  "ignored": 0,
+  "decision_table_verified": [
+    {
+      "word": "",
+      "expected": 0,
+      "actual": 0,
+      "description": "empty input"
+    },
+    {
+      "word": "a",
+      "expected": 1,
+      "actual": 1,
+      "description": "single lowercase letter"
+    },
+    {
+      "word": "A",
+      "expected": 1,
+      "actual": 1,
+      "description": "single uppercase letter (case insensitivity)"
+    },
+    {
+      "word": "f",
+      "expected": 4,
+      "actual": 4,
+      "description": "valuable letter"
+    },
+    {
+      "word": "at",
+      "expected": 2,
+      "actual": 2,
+      "description": "short word"
+    },
+    {
+      "word": "zoo",
+      "expected": 12,
+      "actual": 12,
+      "description": "short valuable word"
+    },
+    {
+      "word": "street",
+      "expected": 6,
+      "actual": 6,
+      "description": "medium word"
+    },
+    {
+      "word": "quirky",
+      "expected": 22,
+      "actual": 22,
+      "description": "medium valuable word"
+    },
+    {
+      "word": "OxyphenButazone",
+      "expected": 41,
+      "actual": 41,
+      "description": "long mixed-case word"
+    },
+    {
+      "word": "pinata",
+      "expected": 8,
+      "actual": 8,
+      "description": "english-like word"
+    },
+    {
+      "word": "abcdefghijklmnopqrstuvwxyz",
+      "expected": 87,
+      "actual": 87,
+      "description": "full alphabet available"
+    }
+  ],
+  "maintenance_md_present": true,
+  "comment_keys_present": true,
+  "status": "PASS"
+}
