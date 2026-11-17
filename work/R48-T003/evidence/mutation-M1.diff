@@ -1,0 +1,10 @@
+--- reference/example.c
++++ mutant/example.c
+@@ -18,6 +18,5 @@
+ 
+    /* a not-null number can not start with 0 */
+-   if ((tail = n % 10) == 0)
+-      return false;
++   tail = n % 10;
+    n /= 10;
+ 

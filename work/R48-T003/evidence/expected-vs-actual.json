@@ -1,0 +1,78 @@
+{
+  "M1": {
+    "expected_explicit": "smallest=4 {2x2}  largest=9 {3x3}",
+    "input": {
+      "max": 5,
+      "min": 2
+    },
+    "mutant_actual": "smallest=4 {2x2}  largest=20 {4x5}",
+    "mutation": {
+      "new": "tail = n % 10;\n   n /= 10;",
+      "old": "if ((tail = n % 10) == 0)\n      return false;\n   n /= 10;"
+    },
+    "oracle": "smallest=4 {2x2}  largest=9 {3x3}",
+    "original_actual": "smallest=4 {2x2}  largest=9 {3x3}",
+    "search_domain": "1 <= min <= max <= 60",
+    "smallest_differing_range": [
+      2,
+      5
+    ]
+  },
+  "M12": {
+    "expected_explicit": "smallest=1 {1x1}  largest=4 {2x2}",
+    "input": {
+      "max": 2,
+      "min": 1
+    },
+    "mutant_actual": "smallest=1 {1x1}  largest=2 {1x2}",
+    "mutation": {
+      "new": "for (i = from; i < to; i++)",
+      "old": "for (i = from; i <= to; i++)"
+    },
+    "oracle": "smallest=1 {1x1}  largest=4 {2x2}",
+    "original_actual": "smallest=1 {1x1}  largest=4 {2x2}",
+    "search_domain": "1 <= min <= max <= 60",
+    "smallest_differing_range": [
+      1,
+      2
+    ]
+  },
+  "M2": {
+    "expected_explicit": "smallest=0 {0x0, 0x1}  largest=1 {1x1}",
+    "input": {
+      "max": 1,
+      "min": 0
+    },
+    "mutant_actual": "ERROR 'no palindrome with factors in the range 0 to 1'",
+    "mutation": {
+      "new": "if (n == 0)\n      return false;",
+      "old": "if (n == 0)\n      return true;"
+    },
+    "oracle": "smallest=0 {0x0, 0x1}  largest=1 {1x1}",
+    "original_actual": "smallest=0 {0x0, 0x1}  largest=1 {1x1}",
+    "search_domain": "0 <= min <= max <= 60",
+    "smallest_differing_range": [
+      0,
+      1
+    ]
+  },
+  "M9": {
+    "expected_explicit": "smallest=252 {12x21, 14x18}  largest=323 {17x19}",
+    "input": {
+      "max": 21,
+      "min": 12
+    },
+    "mutant_actual": "smallest=252 {12x21}  largest=323 {17x19}",
+    "mutation": {
+      "new": "if (n < result->smallest) {",
+      "old": "if (n <= result->smallest) {"
+    },
+    "oracle": "smallest=252 {12x21, 14x18}  largest=323 {17x19}",
+    "original_actual": "smallest=252 {12x21, 14x18}  largest=323 {17x19}",
+    "search_domain": "1 <= min <= max <= 60",
+    "smallest_differing_range": [
+      12,
+      21
+    ]
+  }
+}

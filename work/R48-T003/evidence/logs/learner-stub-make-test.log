@@ -1,0 +1,45 @@
+# learner stub, all cases enabled
+$ make --no-print-directory -C <SCRATCH> test
+exit code: 2
+Compiling tests.out
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_smallest_palindrome_from_single_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:84:(.text+0x1ce): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:91:(.text+0x24d): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_largest_palindrome_from_single_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:97:(.text+0x28e): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:104:(.text+0x324): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_smallest_palindrome_from_double_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:110:(.text+0x365): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:117:(.text+0x3e4): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_largest_palindrome_from_double_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:123:(.text+0x425): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:130:(.text+0x4a5): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_smallest_palindrome_from_triple_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:136:(.text+0x4e6): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:143:(.text+0x565): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_largest_palindrome_from_triple_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:149:(.text+0x5a6): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:156:(.text+0x626): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_smallest_palindrome_from_four_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:162:(.text+0x667): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:169:(.text+0x6e6): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_largest_palindrome_from_four_digit_factors':
+<SCRATCH>/./test_palindrome_products.c:175:(.text+0x727): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:182:(.text+0x7a7): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_empty_result_for_smallest_if_no_palindrome_in_the_range':
+<SCRATCH>/./test_palindrome_products.c:188:(.text+0x7d9): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:194:(.text+0x82d): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_empty_result_for_largest_if_no_palindrome_in_the_range':
+<SCRATCH>/./test_palindrome_products.c:200:(.text+0x84b): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:205:(.text+0x89f): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_error_result_for_smallest_if_min_is_more_than_max':
+<SCRATCH>/./test_palindrome_products.c:211:(.text+0x8bd): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:216:(.text+0x911): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_error_result_for_largest_if_min_is_more_than_max':
+<SCRATCH>/./test_palindrome_products.c:222:(.text+0x92f): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:227:(.text+0x983): undefined reference to `free_product'
+/usr/bin/ld: <LINKER-TEMP>.o: in function `test_smallest_product_not_using_smallest_factor':
+<SCRATCH>/./test_palindrome_products.c:233:(.text+0x9b0): undefined reference to `get_palindrome_product'
+/usr/bin/ld: <SCRATCH>/./test_palindrome_products.c:240:(.text+0xa2f): undefined reference to `free_product'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:37: tests.out] Error 1

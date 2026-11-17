@@ -1,0 +1,23 @@
+M1  get_palindrome_product(2, 5)
+  expected (explicit): smallest=4 {2x2}  largest=9 {3x3}
+  oracle:              smallest=4 {2x2}  largest=9 {3x3}
+  original actual:     smallest=4 {2x2}  largest=9 {3x3}
+  mutant actual:       smallest=4 {2x2}  largest=20 {4x5}
+
+M2  get_palindrome_product(0, 1)
+  expected (explicit): smallest=0 {0x0, 0x1}  largest=1 {1x1}
+  oracle:              smallest=0 {0x0, 0x1}  largest=1 {1x1}
+  original actual:     smallest=0 {0x0, 0x1}  largest=1 {1x1}
+  mutant actual:       ERROR 'no palindrome with factors in the range 0 to 1'
+
+M9  get_palindrome_product(12, 21)
+  expected (explicit): smallest=252 {12x21, 14x18}  largest=323 {17x19}
+  oracle:              smallest=252 {12x21, 14x18}  largest=323 {17x19}
+  original actual:     smallest=252 {12x21, 14x18}  largest=323 {17x19}
+  mutant actual:       smallest=252 {12x21}  largest=323 {17x19}
+
+M12  get_palindrome_product(1, 2)
+  expected (explicit): smallest=1 {1x1}  largest=4 {2x2}
+  oracle:              smallest=1 {1x1}  largest=4 {2x2}
+  original actual:     smallest=1 {1x1}  largest=4 {2x2}
+  mutant actual:       smallest=1 {1x1}  largest=2 {1x2}

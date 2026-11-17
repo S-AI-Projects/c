@@ -1,0 +1,21 @@
+{
+  "domain": "0 <= min <= max <= 60",
+  "examples": {
+    "1,1": {
+      "oracle": "smallest=1 {1x1}  largest=1 {1x1}",
+      "reference": "ERROR 'no palindrome with factors in the range 1 to 1'"
+    },
+    "24,29": {
+      "oracle": "smallest=676 {26x26}  largest=696 {24x29}",
+      "reference": "ERROR 'no palindrome with factors in the range 24 to 29'"
+    },
+    "3,5": {
+      "oracle": "smallest=9 {3x3}  largest=9 {3x3}",
+      "reference": "ERROR 'no palindrome with factors in the range 3 to 5'"
+    }
+  },
+  "ranges": 1891,
+  "reference_reports_no_palindrome_but_oracle_finds_one": 179,
+  "reference_returns_different_value": 0,
+  "status": "observation only; not asserted to be a defect"
+}
