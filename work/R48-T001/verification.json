@@ -1,0 +1,222 @@
+{
+  "assertion_failure_detected": false,
+  "baseline_revision": "ffe5457101796886a272d6ebbeba8f849229c35a",
+  "canonical_cases": [
+    {
+      "description": "Roster is empty when no student is added",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "a3f0fb58-f240-4723-8ddc-e644666b85cc"
+    },
+    {
+      "description": "Add a student",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "9337267f-7793-4b90-9b4a-8e3978408824"
+    },
+    {
+      "description": "Student is added to the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "6d0a30e4-1b4e-472e-8e20-c41702125667"
+    },
+    {
+      "description": "Adding multiple students in the same grade in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "73c3ca75-0c16-40d7-82f5-ed8fe17a8e4a"
+    },
+    {
+      "description": "Multiple students in the same grade are added to the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "233be705-dd58-4968-889d-fb3c7954c9cc"
+    },
+    {
+      "description": "Cannot add student to same grade in the roster more than once",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "87c871c1-6bde-4413-9c44-73d59a259d83"
+    },
+    {
+      "description": "A student can't be in two different grades",
+      "final_status": "excluded",
+      "original_status": "excluded",
+      "uuid": "c125dab7-2a53-492f-a99a-56ad511940d8"
+    },
+    {
+      "description": "A student can only be added to the same grade in the roster once",
+      "final_status": "excluded",
+      "original_status": "excluded",
+      "uuid": "a0c7b9b8-0e89-47f8-8b4a-c50f885e79d1"
+    },
+    {
+      "description": "Student not added to same grade in the roster more than once",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "d7982c4f-1602-49f6-a651-620f2614243a"
+    },
+    {
+      "description": "Adding students in multiple grades",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "e70d5d8f-43a9-41fd-94a4-1ea0fa338056"
+    },
+    {
+      "description": "Students in multiple grades are added to the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "75a51579-d1d7-407c-a2f8-2166e984e8ab"
+    },
+    {
+      "description": "Cannot add same student to multiple grades in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "7df542f1-57ce-433c-b249-ff77028ec479"
+    },
+    {
+      "description": "A student cannot be added to more than one grade in the sorted roster",
+      "final_status": "excluded",
+      "original_status": "excluded",
+      "uuid": "6a03b61e-1211-4783-a3cc-fc7f773fba3f"
+    },
+    {
+      "description": "Student not added to multiple grades in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "c7ec1c5e-9ab7-4d3b-be5c-29f2f7a237c5"
+    },
+    {
+      "description": "Students are sorted by grades in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "d9af4f19-1ba1-48e7-94d0-dabda4e5aba6"
+    },
+    {
+      "description": "Students are sorted by name in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "d9fb5bea-f5aa-4524-9d61-c158d8906807"
+    },
+    {
+      "description": "Students are sorted by grades and then by name in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "180a8ff9-5b94-43fc-9db1-d46b4a8c93b6"
+    },
+    {
+      "description": "Grade is empty if no students in the roster",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "5e67aa3c-a3c6-4407-a183-d8fe59cd1630"
+    },
+    {
+      "description": "Grade is empty if no students in that grade",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "1e0cf06b-26e0-4526-af2d-a2e2df6a51d6"
+    },
+    {
+      "description": "Student not added to same grade more than once",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "2bfc697c-adf2-4b65-8d0f-c46e085f796e"
+    },
+    {
+      "description": "Student not added to multiple grades",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "66c8e141-68ab-4a04-a15a-c28bc07fe6b9"
+    },
+    {
+      "description": "Student not added to other grade for multiple grades",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "c9c1fc2f-42e0-4d2c-b361-99271f03eda7"
+    },
+    {
+      "description": "Students are sorted by name in a grade",
+      "final_status": "included",
+      "original_status": "included",
+      "uuid": "1bfbcef1-e4a3-49e8-8d22-f6f9f386187e"
+    }
+  ],
+  "case_metadata_preserved": true,
+  "child_return_code": 0,
+  "compilation_or_execution_failure": false,
+  "expected_baseline_counts": {
+    "excluded": 3,
+    "included": 20,
+    "total": 23
+  },
+  "expected_tests": 20,
+  "final_counts": {
+    "excluded": 3,
+    "included": 20,
+    "total": 23
+  },
+  "ignore_markers_removed_in_scratch": 19,
+  "learner_solution_sha256_after": {
+    "exercises/practice/grade-school/grade_school.c": "ffe07b6f26fe6d6e9258647ea8581ed2032edb6897dbd128135a9b7915fb0c41",
+    "exercises/practice/grade-school/grade_school.h": "67c42a50b2934f5cd86cea944ebfea39f5360db7ba28f7f68abf0bc2f801f442"
+  },
+  "learner_solution_sha256_before": {
+    "exercises/practice/grade-school/grade_school.c": "ffe07b6f26fe6d6e9258647ea8581ed2032edb6897dbd128135a9b7915fb0c41",
+    "exercises/practice/grade-school/grade_school.h": "67c42a50b2934f5cd86cea944ebfea39f5360db7ba28f7f68abf0bc2f801f442"
+  },
+  "learner_solution_unchanged": true,
+  "original_counts": {
+    "excluded": 3,
+    "included": 20,
+    "total": 23
+  },
+  "scratch_hidden_entries": [
+    ".docs",
+    ".meta"
+  ],
+  "selected_cases": [
+    {
+      "comment": "Excluded as reimplemented by UUID 7df542f1-57ce-433c-b249-ff77028ec479: test_cannot_add_same_student_to_multiple_grades_in_roster checks roster-wide strncmp duplicate lookup; no C limitation.",
+      "coverage_uuid": "7df542f1-57ce-433c-b249-ff77028ec479",
+      "description": "A student can't be in two different grades",
+      "status": "excluded",
+      "test_name": "test_cannot_add_same_student_to_multiple_grades_in_roster",
+      "uuid": "c125dab7-2a53-492f-a99a-56ad511940d8"
+    },
+    {
+      "comment": "Excluded as reimplemented by UUID 87c871c1-6bde-4413-9c44-73d59a259d83: test_cannot_add_student_to_same_grade_more_than_once checks same-grade duplicate rejection via strncmp; no C limitation.",
+      "coverage_uuid": "87c871c1-6bde-4413-9c44-73d59a259d83",
+      "description": "A student can only be added to the same grade in the roster once",
+      "status": "excluded",
+      "test_name": "test_cannot_add_student_to_same_grade_more_than_once",
+      "uuid": "a0c7b9b8-0e89-47f8-8b4a-c50f885e79d1"
+    },
+    {
+      "comment": "Excluded as reimplemented by UUID c7ec1c5e-9ab7-4d3b-be5c-29f2f7a237c5: test_student_not_added_to_multiple_grades_in_roster verifies strncmp rejects the duplicate and the roster remains sorted; no C limitation.",
+      "coverage_uuid": "c7ec1c5e-9ab7-4d3b-be5c-29f2f7a237c5",
+      "description": "A student cannot be added to more than one grade in the sorted roster",
+      "status": "excluded",
+      "test_name": "test_student_not_added_to_multiple_grades_in_roster",
+      "uuid": "6a03b61e-1211-4783-a3cc-fc7f773fba3f"
+    }
+  ],
+  "status": "passed",
+  "task": "R48-T001",
+  "test_command": [
+    "make",
+    "test"
+  ],
+  "test_output_file": "work/R48-T001/test-output.txt",
+  "tests_executed": 20,
+  "tests_failed": 0,
+  "tests_ignored": 0,
+  "tests_passed": 20,
+  "tool_versions": {
+    "c_compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+    "gnu_make": "GNU Make 3.81",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "python_executable": "/opt/homebrew/opt/python@3.15/bin/python3.15"
+  },
+  "unity_tests_reported": 20
+}
