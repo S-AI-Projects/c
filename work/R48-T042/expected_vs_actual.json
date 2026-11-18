@@ -1,0 +1,35 @@
+{
+  "learner_stub_unsolved": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "canonical_cases": {
+    "expected_total": 19,
+    "actual_total": 19,
+    "expected_included": 19,
+    "actual_included": 19,
+    "pass": true
+  },
+  "two_generation_reproducibility": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "key_preservation_comment_key": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "test_run": {
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_tests_run": 19,
+    "actual_tests_run": 19,
+    "expected_failures": 0,
+    "actual_failures": 0,
+    "expected_ignored": 0,
+    "actual_ignored": 0,
+    "pass": true
+  }
+}
