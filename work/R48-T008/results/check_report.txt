@@ -1,0 +1,16 @@
+=== R48-T008 check results (expected vs actual) ===
+
+1. Real config metadata validation
+   expected: all declared solution/test/example files resolve inside exercise
+   actual  : PASS
+
+2. Metadata fixtures (each must FAIL for intended reason)
+   - missing-reference: expected failure (declared example file missing) -> recorded as intended
+   - missing-test: expected failure (declared test file missing) -> recorded as intended
+   - outside-exercise: expected failure (parent traversal outside exercise) -> recorded as intended
+
+3. Behavioural run (reference substituted, intended cases enabled, make test)
+   expected: child exit 0, tests > 0, failures == 0
+   actual  : child exit 0, tests 13, failures 0, ignored 4 -> PASS
+
+total failures: 0
