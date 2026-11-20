@@ -1,0 +1,18 @@
+Compiling tests.out
+./test_queen_attack.c:191:test_invalid_if_on_same_position:PASS
+./test_queen_attack.c:27:test_white_queen_must_have_row_on_board:IGNORE
+./test_queen_attack.c:41:test_white_queen_must_have_column_on_board:IGNORE
+./test_queen_attack.c:55:test_black_queen_must_have_row_on_board:IGNORE
+./test_queen_attack.c:69:test_black_queen_must_have_column_on_board:IGNORE
+./test_queen_attack.c:196:test_can_not_attack:PASS
+./test_queen_attack.c:197:test_can_attack_on_same_row:PASS
+./test_queen_attack.c:198:test_can_attack_on_same_column:PASS
+./test_queen_attack.c:199:test_can_attack_on_first_diagonal:PASS
+./test_queen_attack.c:200:test_can_attack_on_second_diagonal:PASS
+./test_queen_attack.c:201:test_can_attack_on_third_diagonal:PASS
+./test_queen_attack.c:202:test_can_attack_on_fourth_diagonal:PASS
+./test_queen_attack.c:204:test_cannot_attack_if_falling_diagonals_only_same_when_reflected_across_longest_falling_diagonal:PASS
+
+-----------------------
+13 Tests 0 Failures 4 Ignored 
+OK

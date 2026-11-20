@@ -1,0 +1,10 @@
+{
+  "authors": ["RealBarrettBrown"],
+  "contributors": ["bcc32"],
+  "files": {
+    "solution": ["queen_attack.c", "queen_attack.h"],
+    "test": ["nonexistent.c"],
+    "example": [".meta/example.c"]
+  },
+  "blurb": "fixture: missing test"
+}
