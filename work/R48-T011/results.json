@@ -1,0 +1,42 @@
+{
+  "task_id": "R48-T011",
+  "exercise": "prime-factors",
+  "tool_versions": {
+    "python": "3.9.6",
+    "make": "GNU Make 3.81",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "counts": {
+    "before": {
+      "total": 12,
+      "included": 12,
+      "excluded": 0
+    },
+    "after": {
+      "total": 12,
+      "included": 12,
+      "excluded": 0
+    }
+  },
+  "target_uuids": {
+    "924fc966-a8f5-4288-82f2-6b9224819ccd": {
+      "description": "no factors",
+      "comment": "Validates input 1 produces 0 factors. In C, find_factors(1, buf) skips even division (1 % 2 != 0) and trial division (i = 3 > sqrt(1)). The boundary check (n > 2) is false, returning size_t count 0 without accessing or populating the factors array buffer."
+    },
+    "17e30670-b105-4305-af53-ddde182cb6ad": {
+      "description": "prime number",
+      "comment": "Validates smallest prime 2. In C, handled via the initial while ((n % 2 == 0) && (count < MAXFACTORS)) reduction loop and integer division n /= 2, storing 2 at factors[0] and returning count 1."
+    },
+    "238d57c8-4c12-42ef-af34-ae4929f94789": {
+      "description": "another prime number",
+      "comment": "Validates odd prime 3. In C, skips even division, bypasses the for loop trial division because initial i = 3 > floor(sqrt(3)) = 1, and is captured by the remainder check if (n > 2) which sets factors[0] = 3 and returns count 1."
+    }
+  },
+  "execution": {
+    "returncode": 0,
+    "tests_run": 12,
+    "failures": 0,
+    "ignored": 0,
+    "status": "PASS"
+  }
+}
