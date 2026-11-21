@@ -1,0 +1,43 @@
+=== R48-T018: high-scores Path & Configuration Verification ===
+Exercise directory: /Users/tanmayaverma/Documents/Snai/c/exercises/practice/high-scores
+
+--- Validating Real .meta/config.json ---
+OK:   Real config valid: resolved 5 files inside exercise directory
+OK:     resolved: high_scores.c
+OK:     resolved: high_scores.h
+OK:     resolved: test_high_scores.c
+OK:     resolved: .meta/example.c
+OK:     resolved: .meta/example.h
+
+--- Testing Metadata Fixtures ---
+OK:   Fixture 'missing-reference' correctly rejected (file does not exist on disk)
+OK:   Fixture 'missing-test' correctly rejected (file does not exist on disk)
+OK:   Fixture 'outside-exercise' correctly rejected (contains parent traversal)
+
+--- Running Behavioural Reference Check ---
+Compiling tests.out
+./test_high_scores.c:94:test_latest_score:[42mPASS[00m
+./test_high_scores.c:95:test_personal_best:[42mPASS[00m
+./test_high_scores.c:96:test_personal_top_three_from_a_list_of_scores:[42mPASS[00m
+./test_high_scores.c:97:test_personal_top_highest_to_lowest:[42mPASS[00m
+./test_high_scores.c:98:test_personal_top_when_there_is_a_tie:[42mPASS[00m
+./test_high_scores.c:99:test_personal_top_when_there_are_less_than_3:[42mPASS[00m
+./test_high_scores.c:100:test_personal_top_when_there_is_only_one:[42mPASS[00m
+
+-----------------------
+7 Tests 0 Failures 0 Ignored 
+[42mOK[00m
+OK:   Reference test run: 7 Tests, 0 Failures, 0 Ignored (child exit 0)
+
+--- Testing Negative Control (Unsolved Learner Stub) ---
+OK:   Bare stub correctly failed to build/link (exit code 2)
+
+--- Checking tests.toml Anchor and Test Mapping ---
+OK:   Anchor phrase found in tests.toml: 'so comments can be added in a "comment" key.'
+OK:   Found exactly 7 RUN_TEST invocations matching canonical included cases
+OK:   Exercise directory byte-for-byte identical before and after run
+
+=== Summary: 0 failure(s) ===
+
+R48-T018 checks PASSED successfully.
+

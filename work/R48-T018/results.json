@@ -1,0 +1,29 @@
+{
+  "task": "R48-T018",
+  "exercise": "high-scores",
+  "metadata_valid": true,
+  "resolved_files": [
+    "high_scores.c",
+    "high_scores.h",
+    "test_high_scores.c",
+    ".meta/example.c",
+    ".meta/example.h"
+  ],
+  "fixtures": {
+    "missing-reference": "rejected (file does not exist on disk)",
+    "missing-test": "rejected (file does not exist on disk)",
+    "outside-exercise": "rejected (contains parent traversal)"
+  },
+  "behavioural_test": {
+    "tests": 7,
+    "failures": 0,
+    "ignored": 0,
+    "exit_code": 0
+  },
+  "negative_control": {
+    "stub_passed": false,
+    "description": "bare stub correctly fails to link/build"
+  },
+  "anchor_phrase_present": true,
+  "working_tree_clean": true
+}
