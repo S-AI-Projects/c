@@ -1,0 +1,27 @@
+=== R48-T020 Check Report: hello-world ===
+
+1. Real Metadata (.meta/config.json)
+   Expected: solution, test, and example files exist inside exercise directory
+   Actual:   hello_world.c, hello_world.h, test_hello_world.c, .meta/example.c verified -> PASS
+
+2. Reference Execution (make clean && make test)
+   Expected: 1 test, 0 failures, 0 ignored, child exit 0
+   Actual:   1 test, 0 failures, 0 ignored -> PASS
+
+3. Starter Stub Negative Control
+   Expected: fails make test due to 'Goodbye, Mars!' != 'Hello, World!'
+   Actual:   failed as expected with child exit 2 -> PASS
+
+4. Zero-Test Negative Control
+   Expected: detection of zero executed tests
+   Actual:   detected 0 tests executed -> PASS
+
+5. Canonical Specification & Anchor
+   Expected: tests.toml contains 'so comments can be added in a "comment" key.' and UUID af9ffe10-dc13-42d8-a742-e7bdafac449d
+   Actual:   both verified at line 3 and case block -> PASS
+
+6. Contract Guidance & Decision Table
+   Expected: .docs/hints.md connects inputs/outcomes and separates unspecified behavior
+   Actual:   decision table and contract boundaries documented -> PASS
+
+Total failures: 0

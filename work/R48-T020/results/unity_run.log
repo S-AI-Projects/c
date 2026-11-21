@@ -1,0 +1,6 @@
+Compiling tests.out
+./test_hello_world.c:32:test_say_hi:[42mPASS[00m
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+[42mOK[00m
