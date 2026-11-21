@@ -1,0 +1,66 @@
+{
+  "task_id": "R48-T015",
+  "exercise": "robot-simulator",
+  "tool_versions": {
+    "python": "3.9.6",
+    "make": "GNU Make 3.81",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "complexity_study": {
+    "target": "robot_turn_right",
+    "time_complexity": "O(1)",
+    "space_complexity": "O(1)",
+    "domain": "Fixed finite cyclic set of 4 cardinal orientations",
+    "benchmarks": {
+      "10": {
+        "repetitions": 7,
+        "median_ns": 0.0,
+        "ns_per_turn": 0.0,
+        "all_reps_ns": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1000.0,
+          1000.0
+        ]
+      },
+      "100": {
+        "repetitions": 7,
+        "median_ns": 0.0,
+        "ns_per_turn": 0.0,
+        "all_reps_ns": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1000.0,
+          1000.0,
+          1000.0
+        ]
+      },
+      "1000": {
+        "repetitions": 7,
+        "median_ns": 34000.0,
+        "ns_per_turn": 34.0,
+        "all_reps_ns": [
+          34000.0,
+          34000.0,
+          34000.0,
+          34000.0,
+          34000.0,
+          35000.0,
+          35000.0
+        ]
+      }
+    }
+  },
+  "unit_tests": {
+    "returncode": 0,
+    "tests_run": 18,
+    "failures": 0,
+    "ignored": 0,
+    "status": "PASS"
+  }
+}
