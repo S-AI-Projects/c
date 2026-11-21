@@ -1,0 +1,26 @@
+{
+  "task_id": "R48-T014",
+  "exercise": "say",
+  "tool_versions": {
+    "python": "3.9.6",
+    "make": "GNU Make 3.81",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "refactor": {
+    "target": "advance_pos",
+    "clarified_parameters": [
+      "char **cursor",
+      "const char *word",
+      "size_t word_len"
+    ],
+    "invariant_documented": true,
+    "public_api_intact": true
+  },
+  "execution": {
+    "returncode": 0,
+    "tests_run": 19,
+    "failures": 0,
+    "ignored": 0,
+    "status": "PASS"
+  }
+}
