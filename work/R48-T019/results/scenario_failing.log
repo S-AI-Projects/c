@@ -1,0 +1,9 @@
+=== Scenario: failing ===
+Child exit:    2
+Unity summary: 21 Tests, 11 Failures, 0 Ignored
+Runner status: FAILED
+Exit code:     1
+Reason:        non-zero child exit: 2
+
+--- stderr snippet ---
+make: *** [test] Error 11

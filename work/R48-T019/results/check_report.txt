@@ -1,0 +1,27 @@
+=== R48-T019 Check Report: all-your-base ===
+
+1. Real Reference Execution
+   Expected: 21 tests, 0 failures, 0 ignored, exit code 0
+   Actual:   21 tests, 0 failures, 0 ignored, exit code 0 -> PASS
+
+2. Failing Reference Mutation
+   Expected: non-zero exit code propagating test failures
+   Actual:   exit code 1 -> PASS
+
+3. Zero-Test Selection Mutation
+   Expected: non-zero exit code reporting zero-test run
+   Actual:   exit code 1 (zero-test detected) -> PASS
+
+4. Unsolved Learner Stub Negative Control
+   Expected: make test fails to build/link, non-zero exit
+   Actual:   exit code 1 -> PASS
+
+5. Named Canonical Test Cases
+   - Case [232fa4a5-e761-4939-ba0c-ed046cd0676a] (invalid positive digit): PASS
+   - Case [14238f95-45da-41dc-95ce-18f860b30ad3] (output base is one): PASS
+
+6. Working Tree Hash Invariant
+   Expected: SHA-256 hashes of learner files identical before and after each run
+   Actual:   confirmed identical across all 4 scenarios -> PASS
+
+All assertions passed successfully.

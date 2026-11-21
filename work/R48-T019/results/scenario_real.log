@@ -1,0 +1,24 @@
+=== Scenario: real ===
+Child exit:    0
+Unity summary: 21 Tests, 0 Failures, 0 Ignored
+Runner status: PASSED
+Exit code:     0
+Reason:        all 21 cases passed with 0 failures and 0 ignored
+
+--- stdout snippet ---
+
+./test_all_your_base.c:222:test_multiple_zeros:[42mPASS[00m
+./test_all_your_base.c:223:test_leading_zeros:[42mPASS[00m
+./test_all_your_base.c:224:test_input_base_is_one:[42mPASS[00m
+./test_all_your_base.c:225:test_input_base_is_zero:[42mPASS[00m
+./test_all_your_base.c:226:test_input_base_is_negative:[42mPASS[00m
+./test_all_your_base.c:227:test_negative_digit:[42mPASS[00m
+./test_all_your_base.c:228:test_invalid_positive_digit:[42mPASS[00m
+./test_all_your_base.c:229:test_output_base_is_one:[42mPASS[00m
+./test_all_your_base.c:230:test_output_base_is_zero:[42mPASS[00m
+./test_all_your_base.c:231:test_output_base_is_negative:[42mPASS[00m
+./test_all_your_base.c:232:test_both_bases_are_negative:[42mPASS[00m
+
+-----------------------
+21 Tests 0 Failures 0 Ignored 
+[42mOK[00m

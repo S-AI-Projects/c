@@ -1,0 +1,6 @@
+=== Scenario: empty ===
+Child exit:    0
+Unity summary: 0 Tests, 0 Failures, 0 Ignored
+Runner status: FAILED
+Exit code:     1
+Reason:        zero-test run detected (0 tests executed)
