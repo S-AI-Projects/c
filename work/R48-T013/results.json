@@ -1,0 +1,33 @@
+{
+  "task_id": "R48-T013",
+  "exercise": "rna-transcription",
+  "tool_versions": {
+    "python": "3.9.6",
+    "make": "GNU Make 3.81",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)"
+  },
+  "mutant": {
+    "id": "M1",
+    "description": "Transcribe Adenine 'A' to Thymine 'T' instead of Uracil 'U'",
+    "diff": "case 'A': rna[i] = 'T'; // was 'U'",
+    "rejecting_uuid": "aade8964-02e1-4073-872f-42d3ffd74c5f",
+    "rejecting_test": "test_rna_complement_of_adenine_is_uracil",
+    "smallest_diagnostic_input": "A",
+    "expected_output": "U",
+    "actual_mutant_output": "T"
+  },
+  "original_run": {
+    "returncode": 0,
+    "tests": 6,
+    "failures": 0,
+    "ignored": 0,
+    "status": "PASS"
+  },
+  "mutant_run": {
+    "returncode": 2,
+    "tests": 6,
+    "failures": 2,
+    "ignored": 0,
+    "status": "REJECTED_AS_EXPECTED"
+  }
+}
