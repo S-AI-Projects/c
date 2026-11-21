@@ -35,10 +35,14 @@ static const map_t thousands[] = {
 /* below_20's are like two times below_10's so this will work */
 static const int widest = 8;
 
-static void advance_pos(char **dst, const char *src, size_t size)
+// Invariant: *cursor always points to the next write position in the allocated
+// output buffer. advance_pos copies 'word' of length 'word_len' and advances *cursor
+// past it, ensuring sequential word/separator appends complete in O(1) time without
+// repeated O(N) strlen traversals.
+static void advance_pos(char **cursor, const char *word, size_t word_len)
 {
-   strcpy(*dst, src);
-   *dst += size;
+   strcpy(*cursor, word);
+   *cursor += word_len;
 }
 
 int say(int64_t input, char **ans)
