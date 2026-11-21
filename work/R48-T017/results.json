@@ -1,0 +1,9 @@
+{
+  "task": "R48-T017",
+  "exercise": "spiral-matrix",
+  "reference_tests": 6,
+  "reference_failures": 0,
+  "reference_ignored": 0,
+  "stub_fails": true,
+  "directory_unchanged": true
+}
