@@ -1,0 +1,24 @@
+=== R48-T018 Check Report: high-scores ===
+
+1. Real Metadata (.meta/config.json)
+   Expected: all declared solution, test, and example files resolve inside exercise directory
+   Actual:   5 files declared, 5 files resolved (high_scores.c, high_scores.h, test_high_scores.c, .meta/example.c, .meta/example.h) -> PASS
+
+2. Invalid Metadata Fixtures
+   Fixture 1 (missing-reference): Expected failure on missing .meta/nonexistent_example.c -> PASS (rejected)
+   Fixture 2 (missing-test):      Expected failure on missing nonexistent_test.c -> PASS (rejected)
+   Fixture 3 (outside-exercise):  Expected failure on parent traversal ../outside.c -> PASS (rejected)
+
+3. Reference Implementation Behavioural Run (make test)
+   Expected: child return code 0, 7 tests executed, 0 failures, 0 ignored
+   Actual:   child return code 0, 7 tests executed, 0 failures, 0 ignored -> PASS
+
+4. Negative Control (Unsolved Learner Stub)
+   Expected: make test fails to build or link
+   Actual:   linker failure with exit code 2 -> PASS
+
+5. Canonical Specification & Anchor
+   Expected: .meta/tests.toml contains 'so comments can be added in a "comment" key.'
+   Actual:   phrase present at line 3 -> PASS
+
+All checks passed successfully.
