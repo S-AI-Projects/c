@@ -1,0 +1,560 @@
+{
+  "correctness": [
+    {
+      "case": "worst-256x256",
+      "counted": {
+        "count": "65536",
+        "hash": "f4de8216e027444a"
+      },
+      "expected": {
+        "count": 65536,
+        "hash": "f4de8216e027444a"
+      },
+      "plain": {
+        "count": "65536",
+        "hash": "f4de8216e027444a"
+      }
+    },
+    {
+      "case": "best-256x256",
+      "counted": {
+        "count": "256",
+        "hash": "ca8684ca44f5151f"
+      },
+      "expected": {
+        "count": 256,
+        "hash": "ca8684ca44f5151f"
+      },
+      "plain": {
+        "count": "256",
+        "hash": "ca8684ca44f5151f"
+      }
+    },
+    {
+      "case": "random-256x256",
+      "counted": {
+        "count": "1",
+        "hash": "fecc3b55dabd3be1"
+      },
+      "expected": {
+        "count": 1,
+        "hash": "fecc3b55dabd3be1"
+      },
+      "plain": {
+        "count": "1",
+        "hash": "fecc3b55dabd3be1"
+      }
+    },
+    {
+      "case": "worst-256x512",
+      "counted": {
+        "count": "131072",
+        "hash": "ee71b968d18b2e8e"
+      },
+      "expected": {
+        "count": 131072,
+        "hash": "ee71b968d18b2e8e"
+      },
+      "plain": {
+        "count": "131072",
+        "hash": "ee71b968d18b2e8e"
+      }
+    },
+    {
+      "case": "best-256x512",
+      "counted": {
+        "count": "256",
+        "hash": "ca8684ca44f5151f"
+      },
+      "expected": {
+        "count": 256,
+        "hash": "ca8684ca44f5151f"
+      },
+      "plain": {
+        "count": "256",
+        "hash": "ca8684ca44f5151f"
+      }
+    },
+    {
+      "case": "random-256x512",
+      "counted": {
+        "count": "1",
+        "hash": "e98c37810d30ba42"
+      },
+      "expected": {
+        "count": 1,
+        "hash": "e98c37810d30ba42"
+      },
+      "plain": {
+        "count": "1",
+        "hash": "e98c37810d30ba42"
+      }
+    },
+    {
+      "case": "worst-512x512",
+      "counted": {
+        "count": "262144",
+        "hash": "f3baefd468e23775"
+      },
+      "expected": {
+        "count": 262144,
+        "hash": "f3baefd468e23775"
+      },
+      "plain": {
+        "count": "262144",
+        "hash": "f3baefd468e23775"
+      }
+    },
+    {
+      "case": "best-512x512",
+      "counted": {
+        "count": "512",
+        "hash": "6528d7aa46f17b97"
+      },
+      "expected": {
+        "count": 512,
+        "hash": "6528d7aa46f17b97"
+      },
+      "plain": {
+        "count": "512",
+        "hash": "6528d7aa46f17b97"
+      }
+    },
+    {
+      "case": "random-512x512",
+      "counted": {
+        "count": "1",
+        "hash": "c004e4420c7a3c24"
+      },
+      "expected": {
+        "count": 1,
+        "hash": "c004e4420c7a3c24"
+      },
+      "plain": {
+        "count": "1",
+        "hash": "c004e4420c7a3c24"
+      }
+    }
+  ],
+  "named_cases": [
+    {
+      "actual": "PASS",
+      "description": "Can identify single saddle point",
+      "expected": "PASS",
+      "function": "test_single_saddle_point"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify that empty matrix has no saddle points",
+      "expected": "PASS",
+      "function": "test_empty_matrix_has_no_saddle_points"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify lack of saddle points when there are none",
+      "expected": "PASS",
+      "function": "test_lack_of_saddle_points_when_there_are_none"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify multiple saddle points in a column",
+      "expected": "PASS",
+      "function": "test_multiple_saddle_points_in_a_column"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify multiple saddle points in a row",
+      "expected": "PASS",
+      "function": "test_multiple_saddle_points_in_a_row"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify saddle point in bottom right corner",
+      "expected": "PASS",
+      "function": "test_saddle_point_in_bottom_right_corner"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify saddle points in a non square matrix",
+      "expected": "PASS",
+      "function": "test_saddle_points_in_non_square_matrix"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify that saddle points in a single column matrix are those with the minimum value",
+      "expected": "PASS",
+      "function": "test_saddle_points_in_single_column_matrix_are_those_with_the_minimum_value"
+    },
+    {
+      "actual": "PASS",
+      "description": "Can identify that saddle points in a single row matrix are those with the maximum value",
+      "expected": "PASS",
+      "function": "test_saddle_points_in_single_row_matrix_are_those_with_the_maximum_value"
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "zero-test run",
+      "problems": [
+        "zero tests were executed",
+        "test_single_saddle_point: not run, expected PASS",
+        "test_empty_matrix_has_no_saddle_points: not run, expected PASS",
+        "test_lack_of_saddle_points_when_there_are_none: not run, expected PASS",
+        "test_multiple_saddle_points_in_a_column: not run, expected PASS",
+        "test_multiple_saddle_points_in_a_row: not run, expected PASS",
+        "test_saddle_point_in_bottom_right_corner: not run, expected PASS",
+        "test_saddle_points_in_non_square_matrix: not run, expected PASS",
+        "test_saddle_points_in_single_column_matrix_are_those_with_the_minimum_value: not run, expected PASS",
+        "test_saddle_points_in_single_row_matrix_are_those_with_the_maximum_value: not run, expected PASS"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "comparison flipped in is_greatest_in_row",
+      "problems": [
+        "make test exited with code 2",
+        "7 test failure(s)",
+        "test_single_saddle_point: FAIL, expected PASS",
+        "test_lack_of_saddle_points_when_there_are_none: FAIL, expected PASS",
+        "test_multiple_saddle_points_in_a_column: FAIL, expected PASS",
+        "test_multiple_saddle_points_in_a_row: FAIL, expected PASS",
+        "test_saddle_point_in_bottom_right_corner: FAIL, expected PASS",
+        "test_saddle_points_in_non_square_matrix: FAIL, expected PASS",
+        "test_saddle_points_in_single_row_matrix_are_those_with_the_maximum_value: FAIL, expected PASS"
+      ],
+      "returncode": 2
+    },
+    {
+      "name": "bare stub (step 2)",
+      "problems": [
+        "make test exited with code 2",
+        "no Unity summary line (build or run did not finish)",
+        "test_single_saddle_point: not run, expected PASS",
+        "test_empty_matrix_has_no_saddle_points: not run, expected PASS",
+        "test_lack_of_saddle_points_when_there_are_none: not run, expected PASS",
+        "test_multiple_saddle_points_in_a_column: not run, expected PASS",
+        "test_multiple_saddle_points_in_a_row: not run, expected PASS",
+        "test_saddle_point_in_bottom_right_corner: not run, expected PASS",
+        "test_saddle_points_in_non_square_matrix: not run, expected PASS",
+        "test_saddle_points_in_single_column_matrix_are_those_with_the_minimum_value: not run, expected PASS",
+        "test_saddle_points_in_single_row_matrix_are_those_with_the_maximum_value: not run, expected PASS"
+      ],
+      "returncode": 2
+    }
+  ],
+  "operation_counts": [
+    {
+      "bounds": {
+        "lower_R(2C-1)": 130816,
+        "upper_R*C^2": 16777216
+      },
+      "case": "worst-256x256",
+      "closed_form": {
+        "cmps": 16777216,
+        "max_per_call": 256,
+        "min_per_call": 256,
+        "saddles": 65536,
+        "true": 65536
+      },
+      "columns": 256,
+      "measured_real_saddle_points": {
+        "calls": 65536,
+        "cmps": 16777216
+      },
+      "measured_sweep": {
+        "calls": 65536,
+        "cmps": 16777216,
+        "max_per_call": 256,
+        "min_per_call": 256,
+        "true": 65536
+      },
+      "model": {
+        "calls": 65536,
+        "cmps": 16777216,
+        "max_per_call": 256,
+        "min_per_call": 256,
+        "true": 65536
+      },
+      "rows": 256
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 130816,
+        "upper_R*C^2": 16777216
+      },
+      "case": "best-256x256",
+      "closed_form": {
+        "cmps": 130816,
+        "max_per_call": 256,
+        "min_per_call": 1,
+        "saddles": 256,
+        "true": 256
+      },
+      "columns": 256,
+      "measured_real_saddle_points": {
+        "calls": 65536,
+        "cmps": 130816
+      },
+      "measured_sweep": {
+        "calls": 65536,
+        "cmps": 130816,
+        "max_per_call": 256,
+        "min_per_call": 1,
+        "true": 256
+      },
+      "model": {
+        "calls": 65536,
+        "cmps": 130816,
+        "max_per_call": 256,
+        "min_per_call": 1,
+        "true": 256
+      },
+      "rows": 256
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 130816,
+        "upper_R*C^2": 16777216
+      },
+      "case": "random-256x256",
+      "closed_form": null,
+      "columns": 256,
+      "measured_real_saddle_points": {
+        "calls": 65536,
+        "cmps": 442736
+      },
+      "measured_sweep": {
+        "calls": 65536,
+        "cmps": 442736,
+        "max_per_call": 256,
+        "min_per_call": 1,
+        "true": 415
+      },
+      "model": {
+        "calls": 65536,
+        "cmps": 442736,
+        "max_per_call": 256,
+        "min_per_call": 1,
+        "true": 415
+      },
+      "rows": 256
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 261888,
+        "upper_R*C^2": 67108864
+      },
+      "case": "worst-256x512",
+      "closed_form": {
+        "cmps": 67108864,
+        "max_per_call": 512,
+        "min_per_call": 512,
+        "saddles": 131072,
+        "true": 131072
+      },
+      "columns": 512,
+      "measured_real_saddle_points": {
+        "calls": 131072,
+        "cmps": 67108864
+      },
+      "measured_sweep": {
+        "calls": 131072,
+        "cmps": 67108864,
+        "max_per_call": 512,
+        "min_per_call": 512,
+        "true": 131072
+      },
+      "model": {
+        "calls": 131072,
+        "cmps": 67108864,
+        "max_per_call": 512,
+        "min_per_call": 512,
+        "true": 131072
+      },
+      "rows": 256
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 261888,
+        "upper_R*C^2": 67108864
+      },
+      "case": "best-256x512",
+      "closed_form": {
+        "cmps": 261888,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "saddles": 256,
+        "true": 256
+      },
+      "columns": 512,
+      "measured_real_saddle_points": {
+        "calls": 131072,
+        "cmps": 261888
+      },
+      "measured_sweep": {
+        "calls": 131072,
+        "cmps": 261888,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 256
+      },
+      "model": {
+        "calls": 131072,
+        "cmps": 261888,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 256
+      },
+      "rows": 256
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 261888,
+        "upper_R*C^2": 67108864
+      },
+      "case": "random-256x512",
+      "closed_form": null,
+      "columns": 512,
+      "measured_real_saddle_points": {
+        "calls": 131072,
+        "cmps": 1081880
+      },
+      "measured_sweep": {
+        "calls": 131072,
+        "cmps": 1081880,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 595
+      },
+      "model": {
+        "calls": 131072,
+        "cmps": 1081880,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 595
+      },
+      "rows": 256
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 523776,
+        "upper_R*C^2": 134217728
+      },
+      "case": "worst-512x512",
+      "closed_form": {
+        "cmps": 134217728,
+        "max_per_call": 512,
+        "min_per_call": 512,
+        "saddles": 262144,
+        "true": 262144
+      },
+      "columns": 512,
+      "measured_real_saddle_points": {
+        "calls": 262144,
+        "cmps": 134217728
+      },
+      "measured_sweep": {
+        "calls": 262144,
+        "cmps": 134217728,
+        "max_per_call": 512,
+        "min_per_call": 512,
+        "true": 262144
+      },
+      "model": {
+        "calls": 262144,
+        "cmps": 134217728,
+        "max_per_call": 512,
+        "min_per_call": 512,
+        "true": 262144
+      },
+      "rows": 512
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 523776,
+        "upper_R*C^2": 134217728
+      },
+      "case": "best-512x512",
+      "closed_form": {
+        "cmps": 523776,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "saddles": 512,
+        "true": 512
+      },
+      "columns": 512,
+      "measured_real_saddle_points": {
+        "calls": 262144,
+        "cmps": 523776
+      },
+      "measured_sweep": {
+        "calls": 262144,
+        "cmps": 523776,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 512
+      },
+      "model": {
+        "calls": 262144,
+        "cmps": 523776,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 512
+      },
+      "rows": 512
+    },
+    {
+      "bounds": {
+        "lower_R(2C-1)": 523776,
+        "upper_R*C^2": 134217728
+      },
+      "case": "random-512x512",
+      "closed_form": null,
+      "columns": 512,
+      "measured_real_saddle_points": {
+        "calls": 262144,
+        "cmps": 2144948
+      },
+      "measured_sweep": {
+        "calls": 262144,
+        "cmps": 2144948,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 1164
+      },
+      "model": {
+        "calls": 262144,
+        "cmps": 2144948,
+        "max_per_call": 512,
+        "min_per_call": 1,
+        "true": 1164
+      },
+      "rows": 512
+    }
+  ],
+  "task": "R48-T005",
+  "test_counts": {
+    "actual": 9,
+    "expected": 9,
+    "failures": 0,
+    "ignored": 0,
+    "returncode": 0
+  },
+  "unsolved_stub": {
+    "actual_returncode": 2,
+    "expected": "make test fails to build",
+    "problems": [
+      "make test exited with code 2",
+      "no Unity summary line (build or run did not finish)",
+      "test_single_saddle_point: not run, expected PASS",
+      "test_empty_matrix_has_no_saddle_points: not run, expected PASS",
+      "test_lack_of_saddle_points_when_there_are_none: not run, expected PASS",
+      "test_multiple_saddle_points_in_a_column: not run, expected PASS",
+      "test_multiple_saddle_points_in_a_row: not run, expected PASS",
+      "test_saddle_point_in_bottom_right_corner: not run, expected PASS",
+      "test_saddle_points_in_non_square_matrix: not run, expected PASS",
+      "test_saddle_points_in_single_column_matrix_are_those_with_the_minimum_value: not run, expected PASS",
+      "test_saddle_points_in_single_row_matrix_are_those_with_the_maximum_value: not run, expected PASS"
+    ]
+  }
+}

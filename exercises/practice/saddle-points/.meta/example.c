@@ -35,6 +35,24 @@ static saddle_points_t *add(saddle_points_t *saddle_points, size_t row,
    return saddle_points;
 }
 
+/*
+ * is_greatest_in_row: true if matrix[row][column] is >= every element of its
+ * row. Ties count, so every maximum of a row qualifies.
+ *
+ * Invariant: when the loop tests index c, matrix[row][0..c-1] are all
+ * <= candidate. The first element greater than candidate ends the scan.
+ *
+ * Cost, with C = columns: one comparison per iteration, O(1) extra space.
+ *   best case:  1 comparison (matrix[row][0] > candidate);
+ *   worst case: C comparisons (candidate is a row maximum: full scan).
+ * saddle_points() calls this once for each of the R * C cells (it is the left
+ * operand of &&, so it is never skipped). Over a whole grid of R rows the
+ * function therefore executes between R * (2C - 1) and R * C * C comparisons.
+ * Measurements: docs/maintenance/saddle-points.md.
+ *
+ * The index parameters are int16_t, so row and column indices above 32767 are
+ * outside what this reference supports.
+ */
 static bool is_greatest_in_row(int16_t row, int16_t column, size_t columns,
                                uint8_t matrix[][columns])
 {

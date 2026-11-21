@@ -1,0 +1,83 @@
+[
+  {
+    "bytes": 65536,
+    "columns": 256,
+    "generator": "every cell 128",
+    "id": "worst-256x256",
+    "pattern": "worst",
+    "rows": 256,
+    "sha256": "086317bd0c9bcd77537c8a6cfe66f8e7dd84ded162673903b29f9b3f5e5ea244"
+  },
+  {
+    "bytes": 65536,
+    "columns": 256,
+    "generator": "every row is [255, 0, 0, ..., 0]",
+    "id": "best-256x256",
+    "pattern": "best",
+    "rows": 256,
+    "sha256": "f573f5f3e80e4ee57367cc232c01661dca0a4530349d8b8dfcd0183815d608f9"
+  },
+  {
+    "bytes": 65536,
+    "columns": 256,
+    "generator": "64-bit LCG seed 48005, top byte of state, row-major; one planted saddle point of height 127 at (row 86, column 171)",
+    "id": "random-256x256",
+    "pattern": "random",
+    "rows": 256,
+    "sha256": "127bd342c0d489abf86344275b0102dce430d6f34f93299e07633760f35d16a1"
+  },
+  {
+    "bytes": 131072,
+    "columns": 512,
+    "generator": "every cell 128",
+    "id": "worst-256x512",
+    "pattern": "worst",
+    "rows": 256,
+    "sha256": "ea0ff9062ca1e37bfd7021c878bfea32caaca9f4ecd77153300fe55f427debe9"
+  },
+  {
+    "bytes": 131072,
+    "columns": 512,
+    "generator": "every row is [255, 0, 0, ..., 0]",
+    "id": "best-256x512",
+    "pattern": "best",
+    "rows": 256,
+    "sha256": "e2506480902dba94a547ea7ad776e36a5ed0d76aca7a62dd8da6847a167176d0"
+  },
+  {
+    "bytes": 131072,
+    "columns": 512,
+    "generator": "64-bit LCG seed 48005, top byte of state, row-major; one planted saddle point of height 127 at (row 86, column 342)",
+    "id": "random-256x512",
+    "pattern": "random",
+    "rows": 256,
+    "sha256": "ae34725fc677f76def2409d4b8644723eb167ea05ac9c760ac09da1f849e5f70"
+  },
+  {
+    "bytes": 262144,
+    "columns": 512,
+    "generator": "every cell 128",
+    "id": "worst-512x512",
+    "pattern": "worst",
+    "rows": 512,
+    "sha256": "6c9b7fcf875d48a0ef17ac32c5c3793e8dea7fe199e7d3370032a00b21f7c94c"
+  },
+  {
+    "bytes": 262144,
+    "columns": 512,
+    "generator": "every row is [255, 0, 0, ..., 0]",
+    "id": "best-512x512",
+    "pattern": "best",
+    "rows": 512,
+    "sha256": "aa71b1e093051b15e5b568db3b15c6f230ba62f552098047bf11ad6f2108b006"
+  },
+  {
+    "bytes": 262144,
+    "columns": 512,
+    "generator": "64-bit LCG seed 48005, top byte of state, row-major; one planted saddle point of height 127 at (row 171, column 342)",
+    "id": "random-512x512",
+    "pattern": "random",
+    "rows": 512,
+    "sha256": "a21113212c508a4abb7cf00cec41a9587f20ca46f46ace158b2d3acaf10d6a7d"
+  }
+]

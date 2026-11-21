@@ -1,0 +1,14 @@
+Compiling tests.out
+./test_saddle_points.c:146:test_single_saddle_point:PASS
+./test_saddle_points.c:147:test_empty_matrix_has_no_saddle_points:PASS
+./test_saddle_points.c:148:test_lack_of_saddle_points_when_there_are_none:PASS
+./test_saddle_points.c:149:test_multiple_saddle_points_in_a_column:PASS
+./test_saddle_points.c:150:test_multiple_saddle_points_in_a_row:PASS
+./test_saddle_points.c:151:test_saddle_point_in_bottom_right_corner:PASS
+./test_saddle_points.c:152:test_saddle_points_in_non_square_matrix:PASS
+./test_saddle_points.c:153:test_saddle_points_in_single_column_matrix_are_those_with_the_minimum_value:PASS
+./test_saddle_points.c:155:test_saddle_points_in_single_row_matrix_are_those_with_the_maximum_value:PASS
+
+-----------------------
+9 Tests 0 Failures 0 Ignored 
+OK
