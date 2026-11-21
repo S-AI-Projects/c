@@ -1,0 +1,12 @@
+{
+  "task": "R48-T016",
+  "exercise": "raindrops",
+  "reference_tests": 17,
+  "reference_failures": 0,
+  "reference_ignored": 0,
+  "alternative_tests": 17,
+  "alternative_failures": 0,
+  "approaches_agree": true,
+  "stub_fails": true,
+  "directory_unchanged": true
+}
