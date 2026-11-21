@@ -1,0 +1,24 @@
+{
+  "task": "R48-T020",
+  "exercise": "hello-world",
+  "metadata_valid": true,
+  "reference_execution": {
+    "tests": 1,
+    "failures": 0,
+    "ignored": 0,
+    "status": "PASS"
+  },
+  "negative_controls": {
+    "unsolved_stub_rejected": true,
+    "zero_test_run_detected": true
+  },
+  "canonical_case": {
+    "uuid": "af9ffe10-dc13-42d8-a742-e7bdafac449d",
+    "description": "Say Hi!",
+    "status": "PASS"
+  },
+  "anchor_phrase_present": true,
+  "hints_decision_table_present": true,
+  "working_tree_clean": true,
+  "overall_status": "PASS"
+}
