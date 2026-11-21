@@ -1,0 +1,42 @@
+{
+  "task": "R48-T019",
+  "exercise": "all-your-base",
+  "runner_script": "tools/course_checks/r48-t019.py",
+  "scenarios": {
+    "real": {
+      "exit_code": 0,
+      "tests": 21,
+      "failures": 0,
+      "ignored": 0,
+      "passed": true
+    },
+    "failing": {
+      "exit_code": 1,
+      "passed_expected_rejection": true
+    },
+    "empty": {
+      "exit_code": 1,
+      "zero_tests_detected": true,
+      "passed_expected_rejection": true
+    },
+    "stub": {
+      "exit_code": 1,
+      "build_failure_detected": true,
+      "passed_expected_rejection": true
+    }
+  },
+  "named_cases_verified": [
+    {
+      "uuid": "232fa4a5-e761-4939-ba0c-ed046cd0676a",
+      "description": "invalid positive digit",
+      "status": "PASS"
+    },
+    {
+      "uuid": "14238f95-45da-41dc-95ce-18f860b30ad3",
+      "description": "output base is one",
+      "status": "PASS"
+    }
+  ],
+  "learner_files_unmodified": true,
+  "overall_status": "PASS"
+}

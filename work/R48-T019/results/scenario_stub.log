@@ -1,0 +1,19 @@
+=== Scenario: stub ===
+Child exit:    2
+Runner status: FAILED
+Exit code:     1
+Reason:        non-zero child exit: 2
+
+--- stderr snippet ---
+ C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   34 |    size_t actual_length = rebase(digits, input_base, output_base, input_length);
+      |                           ^
+./test_all_your_base.c:34:27: note: did you mean 'rename'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:269:6: note: 'rename' declared here
+  269 | int      rename (const char *__old, const char *__new);
+      |          ^
+./test_all_your_base.c:109:32: error: call to undeclared function 'rebase'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  109 |    TEST_ASSERT_EQUAL_size_t(0, rebase(input, 2, 10, 0));
+      |                                ^
+2 errors generated.
+make: *** [tests.out] Error 1
