@@ -1,0 +1,217 @@
+{
+  "compile_ms": {
+    "counted": 85.5,
+    "plain": 84.2
+  },
+  "process_startup_floor_ms": {
+    "median": 1.4,
+    "runs": [
+      1.56,
+      1.53,
+      1.36,
+      1.33,
+      1.4
+    ]
+  },
+  "reps": 7,
+  "timings": [
+    {
+      "case": "worst-256x256",
+      "columns": 256,
+      "comparisons": 16777216,
+      "max_ms": 11.75,
+      "median_ms": 6.551,
+      "min_ms": 5.987,
+      "ns": [
+        11749793,
+        6550927,
+        6095403,
+        6279652,
+        5987077,
+        7820718,
+        8820883
+      ],
+      "ns_per_comparison_median": 0.39,
+      "pattern": "worst",
+      "process_wall_ms_all_reps": 63.0,
+      "reps": 7,
+      "rows": 256
+    },
+    {
+      "case": "best-256x256",
+      "columns": 256,
+      "comparisons": 130816,
+      "max_ms": 0.071,
+      "median_ms": 0.054,
+      "min_ms": 0.05,
+      "ns": [
+        49676,
+        49516,
+        49567,
+        54262,
+        60640,
+        70782,
+        59762
+      ],
+      "ns_per_comparison_median": 0.415,
+      "pattern": "best",
+      "process_wall_ms_all_reps": 2.2,
+      "reps": 7,
+      "rows": 256
+    },
+    {
+      "case": "random-256x256",
+      "columns": 256,
+      "comparisons": 442736,
+      "max_ms": 0.623,
+      "median_ms": 0.583,
+      "min_ms": 0.553,
+      "ns": [
+        594311,
+        612852,
+        552913,
+        622757,
+        575946,
+        568361,
+        583246
+      ],
+      "ns_per_comparison_median": 1.317,
+      "pattern": "random",
+      "process_wall_ms_all_reps": 6.3,
+      "reps": 7,
+      "rows": 256
+    },
+    {
+      "case": "worst-256x512",
+      "columns": 512,
+      "comparisons": 67108864,
+      "max_ms": 28.998,
+      "median_ms": 23.976,
+      "min_ms": 22.387,
+      "ns": [
+        22387227,
+        23976446,
+        27358094,
+        28703025,
+        28997964,
+        22529091,
+        22565988
+      ],
+      "ns_per_comparison_median": 0.357,
+      "pattern": "worst",
+      "process_wall_ms_all_reps": 202.9,
+      "reps": 7,
+      "rows": 256
+    },
+    {
+      "case": "best-256x512",
+      "columns": 512,
+      "comparisons": 261888,
+      "max_ms": 0.109,
+      "median_ms": 0.093,
+      "min_ms": 0.092,
+      "ns": [
+        108678,
+        92566,
+        92478,
+        92452,
+        106323,
+        92513,
+        92478
+      ],
+      "ns_per_comparison_median": 0.353,
+      "pattern": "best",
+      "process_wall_ms_all_reps": 2.4,
+      "reps": 7,
+      "rows": 256
+    },
+    {
+      "case": "random-256x512",
+      "columns": 512,
+      "comparisons": 1081880,
+      "max_ms": 1.234,
+      "median_ms": 1.183,
+      "min_ms": 1.171,
+      "ns": [
+        1171198,
+        1233596,
+        1191930,
+        1182666,
+        1200287,
+        1173797,
+        1174872
+      ],
+      "ns_per_comparison_median": 1.093,
+      "pattern": "random",
+      "process_wall_ms_all_reps": 11.1,
+      "reps": 7,
+      "rows": 256
+    },
+    {
+      "case": "worst-512x512",
+      "columns": 512,
+      "comparisons": 134217728,
+      "max_ms": 58.458,
+      "median_ms": 46.648,
+      "min_ms": 44.588,
+      "ns": [
+        44587969,
+        45316258,
+        47624855,
+        45036734,
+        47369259,
+        46647753,
+        58458084
+      ],
+      "ns_per_comparison_median": 0.348,
+      "pattern": "worst",
+      "process_wall_ms_all_reps": 394.4,
+      "reps": 7,
+      "rows": 512
+    },
+    {
+      "case": "best-512x512",
+      "columns": 512,
+      "comparisons": 523776,
+      "max_ms": 0.307,
+      "median_ms": 0.27,
+      "min_ms": 0.246,
+      "ns": [
+        302491,
+        307309,
+        245680,
+        252342,
+        271602,
+        270251,
+        262873
+      ],
+      "ns_per_comparison_median": 0.516,
+      "pattern": "best",
+      "process_wall_ms_all_reps": 4.5,
+      "reps": 7,
+      "rows": 512
+    },
+    {
+      "case": "random-512x512",
+      "columns": 512,
+      "comparisons": 2144948,
+      "max_ms": 2.346,
+      "median_ms": 2.286,
+      "min_ms": 2.252,
+      "ns": [
+        2286744,
+        2285985,
+        2346242,
+        2281224,
+        2270775,
+        2334934,
+        2251851
+      ],
+      "ns_per_comparison_median": 1.066,
+      "pattern": "random",
+      "process_wall_ms_all_reps": 21.4,
+      "reps": 7,
+      "rows": 512
+    }
+  ]
+}
