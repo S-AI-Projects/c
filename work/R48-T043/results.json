@@ -1,0 +1,75 @@
+{
+  "task_id": "R48-T043",
+  "exercise": "variable-length-quantity",
+  "tools": {
+    "python": "3.15.2",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "make": "GNU Make 3.81",
+    "configlet": "4.0.3"
+  },
+  "learner_stub_unsolved": true,
+  "canonical_cases_count": 26,
+  "original_test_results": {
+    "tests_run": 26,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_zero",
+      "test_arbitrary_single_byte",
+      "test_largest_single_byte",
+      "test_smallest_double_byte",
+      "test_arbitrary_double_byte",
+      "test_largest_double_byte",
+      "test_smallest_triple_byte",
+      "test_arbitrary_triple_byte",
+      "test_largest_triple_byte",
+      "test_smallest_quadruple_byte",
+      "test_arbitrary_quadruple_byte",
+      "test_largest_quadruple_byte",
+      "test_smallest_quintuple_byte",
+      "test_arbitrary_quintuple_byte",
+      "test_maximum_32_bit_integer_input",
+      "test_two_single_byte_values",
+      "test_two_multi_byte_values",
+      "test_many_multi_byte_values",
+      "test_one_byte",
+      "test_two_bytes",
+      "test_three_bytes",
+      "test_four_bytes",
+      "test_maximum_32_bit_integer",
+      "test_incomplete_sequence_causes_error",
+      "test_incomplete_sequence_causes_error_even_if_value_is_zero",
+      "test_multiple_values"
+    ],
+    "exit_code": 0
+  },
+  "mutant_test_results": {
+    "tests_run": 26,
+    "failures": 2,
+    "ignored": 0,
+    "failed_tests": [
+      [
+        "test_zero",
+        " Expected 1 Was 0"
+      ],
+      [
+        "test_many_multi_byte_values",
+        " Expected 15 Was 14"
+      ]
+    ],
+    "exit_code": 2
+  },
+  "minimal_rejecting_input": {
+    "input": [
+      0
+    ],
+    "input_len": 1,
+    "expected_len": 1,
+    "actual_len": 0,
+    "rejecting_uuid": "35c9db2e-f781-4c52-b73b-8e76427defd0",
+    "rejecting_test": "test_zero"
+  },
+  "maintenance_doc_verified": true,
+  "hint_doc_verified": true,
+  "status": "SUCCESS"
+}

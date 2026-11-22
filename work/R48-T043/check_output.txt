@@ -1,0 +1,38 @@
+Task R48-T043 Verification Check Results
+=========================================
+Tools:
+  Python: 3.15.2
+  CC: Apple clang version 21.0.0 (clang-2100.4.1.1)
+  Make: GNU Make 3.81
+  Configlet: 4.0.3
+
+Canonical Counts:
+  Total Cases: 26
+
+Original Reference Test Execution:
+  Tests Run: 26
+  Failures: 0
+  Ignored: 0
+  Status: PASS (Exit code 0)
+
+Primary Mutant Test Execution:
+  Tests Run: 26
+  Failures: 2
+  Ignored: 0
+  Status: REJECTED (Exit code 2)
+  Rejecting Test: test_zero (UUID 35c9db2e-f781-4c52-b73b-8e76427defd0)
+  Minimal Input: integers = [0], input_len = 1
+  Assertion Failure: Expected 1 Was 0
+
+Secondary Mutant Test Execution:
+  Tests Run: 26
+  Failures: 14
+  Ignored: 0
+  Status: REJECTED (Exit code 2)
+  Rejecting Test: test_smallest_double_byte (UUID 77b07086-bd3f-4882-8476-8dcafee79b1c)
+  Minimal Input: integers = [128], input_len = 1
+  Assertion Failure: Expected 2 Was 1
+
+Learner stub untouched in working tree: True
+Maintenance documentation present: True
+Debugging hint present: True
