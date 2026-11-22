@@ -91,3 +91,17 @@ The reference implementation is verified in an isolated temporary directory with
 4. Enable all test cases by stripping `TEST_IGNORE();` from the scratch copy's test file.
 5. Execute `make test` using the supplied exercise makefile.
 6. Verify child exit code 0, 19 passing tests, 0 failures, and 0 ignored tests.
+
+## Verification & Task Checklist
+
+### Done When Checklist
+- [x] The named cases (so comments can be added in a "comment" key.) and all other enabled cases pass against the reference; the learner stub is still unsolved.
+- [x] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
+- [x] Two generations yield the same tests after the documented timestamp normalization; no case is silently dropped.
+- [x] The maintenance page identifies the source of the three cases (so comments can be added in a "comment" key.) and the command that reproduces them.
+
+### Submission Checklist
+- [x] Complete this task and its checks.
+- [x] Add the required evidence and link your pull request here.
+- [x] Select this S-AI-Projects fork as the PR base repository.
+- [x] Request instructor review.
