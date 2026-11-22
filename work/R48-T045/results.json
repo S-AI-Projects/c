@@ -1,0 +1,70 @@
+{
+  "task_id": "R48-T045",
+  "exercise": "exercises/practice/clock",
+  "reference_source": "exercises/practice/clock/.meta/example.c#L6",
+  "total_canonical_tests": 52,
+  "scratch_tests_passed": 52,
+  "compilation_overhead_ms": 83.95,
+  "process_startup_ms": 160.57,
+  "measurements": {
+    "size1_standard_in_range": {
+      "input": [
+        8,
+        0
+      ],
+      "operations": 6,
+      "repetitions_ns": [
+        1.21,
+        1.24,
+        1.23,
+        1.24,
+        1.23
+      ],
+      "median_ns_per_call": 1.23,
+      "complexity": "O(1)"
+    },
+    "size2_positive_rollover": {
+      "input": [
+        201,
+        3001
+      ],
+      "operations": 6,
+      "repetitions_ns": [
+        1.25,
+        1.25,
+        1.33,
+        1.33,
+        1.35
+      ],
+      "median_ns_per_call": 1.33,
+      "complexity": "O(1)"
+    },
+    "size3_negative_rollback": {
+      "input": [
+        -121,
+        -5810
+      ],
+      "operations": 317,
+      "repetitions_ns": [
+        127.69,
+        122.88,
+        121.88,
+        122.91,
+        133.18
+      ],
+      "median_ns_per_call": 122.91,
+      "complexity": "O(|minute|/60 + |hour|/24)"
+    }
+  },
+  "cost_distinction": {
+    "algorithm_latency_ns": {
+      "size1": 1.23,
+      "size2": 1.33,
+      "size3": 122.91
+    },
+    "infrastructure_overhead_ms": {
+      "compilation": 83.95,
+      "process_execution": 160.57
+    }
+  }
+}

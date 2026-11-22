@@ -1,0 +1,54 @@
+{
+  "exercise": "exercises/practice/clock",
+  "routine": "normalize_clock",
+  "domain_sizes": [
+    {
+      "size_level": 1,
+      "label": "standard_in_range",
+      "canonical_case_uuid": "a577bacc-106b-496e-9792-b3083ea8705e",
+      "input": {
+        "hour": 8,
+        "minute": 0
+      },
+      "expected": {
+        "hour": 8,
+        "minute": 0,
+        "formatted": "08:00"
+      },
+      "theoretical_operations": 6,
+      "asymptotic_bound": "O(1)"
+    },
+    {
+      "size_level": 2,
+      "label": "positive_multi_day_rollover",
+      "canonical_case_uuid": "be60810e-f5d9-4b58-9351-a9d1e90e660c",
+      "input": {
+        "hour": 201,
+        "minute": 3001
+      },
+      "expected": {
+        "hour": 11,
+        "minute": 1,
+        "formatted": "11:01"
+      },
+      "theoretical_operations": 6,
+      "asymptotic_bound": "O(1)"
+    },
+    {
+      "size_level": 3,
+      "label": "negative_multi_day_rollback",
+      "canonical_case_uuid": "51d41fcf-491e-4ca0-9cae-2aa4f0163ad4",
+      "input": {
+        "hour": -121,
+        "minute": -5810
+      },
+      "expected": {
+        "hour": 22,
+        "minute": 10,
+        "formatted": "22:10"
+      },
+      "theoretical_operations": 317,
+      "asymptotic_bound": "O(|minute|/60 + |hour|/24)"
+    }
+  ]
+}

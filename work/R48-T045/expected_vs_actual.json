@@ -1,0 +1,71 @@
+{
+  "test_suite_execution": {
+    "total_canonical_cases": 52,
+    "executed_cases": 52,
+    "expected_failures": 0,
+    "actual_failures": 0,
+    "ignored_cases": 0,
+    "status": "PASS"
+  },
+  "domain_correctness_assertions": {
+    "size1": {
+      "input": [
+        8,
+        0
+      ],
+      "expected": [
+        8,
+        0
+      ],
+      "actual": [
+        8,
+        0
+      ],
+      "status": "PASS"
+    },
+    "size2": {
+      "input": [
+        201,
+        3001
+      ],
+      "expected": [
+        11,
+        1
+      ],
+      "actual": [
+        11,
+        1
+      ],
+      "status": "PASS"
+    },
+    "size3": {
+      "input": [
+        -121,
+        -5810
+      ],
+      "expected": [
+        22,
+        10
+      ],
+      "actual": [
+        22,
+        10
+      ],
+      "status": "PASS"
+    }
+  },
+  "operation_counts": {
+    "size1": {
+      "expected_ops": 6,
+      "actual_ops": 6
+    },
+    "size2": {
+      "expected_ops": 6,
+      "actual_ops": 6
+    },
+    "size3": {
+      "expected_ops": 317,
+      "actual_ops": 317
+    }
+  }
+}
