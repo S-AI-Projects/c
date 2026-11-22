@@ -15,9 +15,9 @@ Fixes: #44
 
 ## Type of Change
 
-[✓] Documentation
-[✓] Tests
-[✓] Refactoring / Maintenance
+- [x] Documentation
+- [x] Tests
+- [x] Refactoring / Maintenance
 
 ## Changes Made
 
@@ -29,33 +29,34 @@ Fixes: #44
 ## Testing & Verification Results
 
 - Ran `python3 work/R48-T044/check.py` and `python3 tools/course_checks/r48-t044.py`.
-- 8/8 tests passed against both original and refactored reference with 0 failures and 0 ignored.
-- `make memcheck` passed with zero memory errors.
+- **8/8 tests passed** against both original and refactored reference with 0 failures and 0 ignored.
+- **make memcheck** passed with zero memory errors under AddressSanitizer.
 - Working tree learner starter files (`crypto_square.c`, `crypto_square.h`) remain completely unsolved.
 - Baseline cases in `tests.toml` preserved: all 9 cases verified (descriptions recreated, reimplements recreated, other keys preserved).
 
 ## Done When Checklist
 
-[✓] The named cases (- Recreate every description key/value pair; - Recreate every reimplements key/value pair, where they exist in problem-specifications; - Preserve any other key/value pair) and all other enabled cases pass against the reference; the learner stub is still unsolved.
-[✓] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
-[✓] The diff identifies one concrete readability improvement and explains why it helps this exercise.
-[✓] Before/after outputs agree on all enabled cases; no new dependency or public API change is introduced.
+- [x] The named cases (- Recreate every description key/value pair; - Recreate every reimplements key/value pair, where they exist in problem-specifications; - Preserve any other key/value pair) and all other enabled cases pass against the reference; the learner stub is still unsolved.
+- [x] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
+- [x] The diff identifies one concrete readability improvement and explains why it helps this exercise.
+- [x] Before/after outputs agree on all enabled cases; no new dependency or public API change is introduced.
 
 ## Submission Checklist
 
-[✓] Complete this task and its checks.
-[✓] Add the required evidence and link your pull request here.
-[✓] Select this S-AI-Projects fork as the PR base repository.
-[✓] Request instructor review.
+- [x] Complete this task and its checks.
+- [x] Add the required evidence and link your pull request here.
+- [x] Select this S-AI-Projects fork as the PR base repository.
+- [x] Request instructor review.
+- [x] Keep this PR focused on this task. Do not submit assignment PRs to the upstream repository.
 
 ## General PR Checklist
 
-[✓] I have tested my changes locally.
-[✓] I have added or updated tests, if needed.
-[✓] I have updated documentation, if needed.
-[✓] I have followed the project's coding guidelines.
-[✓] I have run the relevant tests and checks.
-[✓] I have addressed previous review feedback, if applicable.
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
 
 ## Additional Notes
 
