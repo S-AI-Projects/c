@@ -2,14 +2,20 @@
 # file is regenerated. Regenerating will not touch any manually added keys,
 # so comments can be added in a "comment" key.
 
+# test_missed_target: Coordinates (-9.0F, 9.0F) yield distance sqrt(162) ≈ 12.73 > 10.0; C relational check evaluates false for all concentric circles and falls through to OFF_BOARD_SCORE (0).
 [9033f731-0a3a-4d9c-b1c0-34a1c8362afb]
 description = "Missed target"
+comment = "test_missed_target: Evaluates Euclidean distance via sqrt(x*x + y*y) in <math.h>. With (-9.0F, 9.0F), distance is ~12.73 > 10.0 (OUTER_CIRCLE_RADIUS); C sequential comparison evaluates false for all concentric bounds and returns OFF_BOARD_SCORE (0)."
 
+# test_on_the_outer_circle: Boundary test at (0.0F, 10.0F) with distance 10.0F; verifies inclusive relational comparison (distance <= OUTER_CIRCLE_RADIUS) awarding OUTER_CIRCLE_SCORE (1).
 [4c9f6ff4-c489-45fd-be8a-1fcb08b4d0ba]
 description = "On the outer circle"
+comment = "test_on_the_outer_circle: Evaluates boundary inclusivity at exact outer perimeter (0.0F, 10.0F) with distance 10.0F == 10.0F. C relational comparison (distance <= OUTER_CIRCLE_RADIUS) evaluates true, awarding OUTER_CIRCLE_SCORE (1)."
 
+# test_on_the_middle_circle: Boundary test at (-5.0F, 0.0F) with distance 5.0F; verifies negative coordinate squaring and inclusive comparison (distance <= MIDDLE_CIRCLE_RADIUS) awarding MIDDLE_CIRCLE_SCORE (5).
 [14378687-ee58-4c9b-a323-b089d5274be8]
 description = "On the middle circle"
+comment = "test_on_the_middle_circle: Tests negative coordinate squaring and middle circle boundary at (-5.0F, 0.0F) with distance 5.0F == 5.0F. C relational comparison (distance <= MIDDLE_CIRCLE_RADIUS) evaluates true, awarding MIDDLE_CIRCLE_SCORE (5)."
 
 [849e2e63-85bd-4fed-bc3b-781ae962e2c9]
 description = "On the inner circle"
