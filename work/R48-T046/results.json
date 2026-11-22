@@ -1,0 +1,47 @@
+{
+  "task_id": "R48-T046",
+  "exercise": "exercises/practice/run-length-encoding",
+  "reference_source": "exercises/practice/run-length-encoding/.meta/example.c#L10",
+  "alternative_source": "work/R48-T046/dynamic_buffer_rle.c",
+  "total_canonical_tests": 13,
+  "approach1_tests_passed": 13,
+  "approach2_tests_passed": 13,
+  "compilation_overhead_ms": 133.28,
+  "process_startup_ms": 443.13,
+  "measurements": {
+    "approach1_two_pass_exact": {
+      "repetitions_ns": [
+        153.06,
+        149.74,
+        150.26,
+        153.76,
+        146.22
+      ],
+      "median_ns_per_call": 150.26,
+      "heap_allocations": 1,
+      "complexity": "O(N) time (2 passes), O(M) space"
+    },
+    "approach2_streaming_dynamic": {
+      "repetitions_ns": [
+        125.36,
+        124.62,
+        125.02,
+        119.32,
+        124.14
+      ],
+      "median_ns_per_call": 124.62,
+      "heap_allocations": "Amortized geometric realloc",
+      "complexity": "O(N) time (1 pass), O(M) space"
+    }
+  },
+  "cost_distinction": {
+    "algorithm_latency_ns": {
+      "approach1_ref": 150.26,
+      "approach2_alt": 124.62
+    },
+    "infrastructure_overhead_ms": {
+      "compilation": 133.28,
+      "process_execution": 443.13
+    }
+  }
+}

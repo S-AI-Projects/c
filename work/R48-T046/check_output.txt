@@ -1,0 +1,20 @@
+======================================================================
+Running Course Check for Task R48-T046: run-length-encoding
+======================================================================
+[PASS] Resolved files from .meta/config.json:
+       Solution files: ['run_length_encoding.c', 'run_length_encoding.h']
+       Test files:     ['test_run_length_encoding.c']
+       Example files:  ['.meta/example.c', '.meta/example.h']
+[PASS] Learner stubs (run_length_encoding.c, run_length_encoding.h) remain strictly unsolved.
+[PASS] Verified tests.toml: all 13 canonical cases have 'comment' keys.
+[PASS] Verified .docs/hints.md: approach-selection, worked inputs, and trade-offs documented.
+[PASS] Approach 1 (Reference): all 13 tests PASSED with make test & make memcheck.
+[PASS] Approach 2 (Dynamic Buffer): all 13 tests PASSED with make test & make memcheck.
+[PASS] Direct functional assertion: all 13 canonical cases match identically between Approach 1 and Approach 2.
+[INFO] Measured pure algorithm latencies (50,000 iterations x 5 reps):
+       Approach 1 (Two-Pass Exact):     Median 150.26 ns/call
+       Approach 2 (Streaming Dynamic):  Median 124.62 ns/call
+[INFO] Infrastructure overhead: compilation=133.28 ms, process startup=443.13 ms
+[PASS] Mirrored check script to tools/course_checks/r48-t046.py.
+
+[SUCCESS] All verification criteria for Task R48-T046 passed successfully!
