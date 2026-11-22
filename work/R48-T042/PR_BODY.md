@@ -11,13 +11,8 @@ Fixes: #42
 
 ## Type of Change
 - [x] Documentation
-- [ ] Bug Fix
-- [ ] New Feature
-- [ ] UI/UX Improvement
-- [ ] Performance Improvement
 - [x] Tests
 - [x] Refactoring / Maintenance
-- [ ] CI/CD
 
 ## Changes Made
 - Added `docs/maintenance/linked-list.md` (and mirrored in `exercises/practice/linked-list/.meta/MAINTENANCE.md`) documenting the canonical data source, reproduction commands (`./bin/fetch-configlet` and `./bin/configlet sync --exercise linked-list --tests include --update --yes`), maintained vs generated files distinction, the three key handling rules during regeneration, and an exhaustive 19-case-to-output mapping table.
@@ -46,7 +41,7 @@ Fixes: #42
 - [x] Select this S-AI-Projects fork as the PR base repository.
 - [x] Request instructor review.
 
-## General PR Checklist
+## Review Checklist
 - [x] I have tested my changes locally.
 - [x] I have added or updated tests, if needed.
 - [x] I have updated documentation, if needed.
