@@ -18,10 +18,9 @@ Algorithmic complexity study, operation counting, and empirical scaling analysis
 Fixes: #45
 
 ## Type of Change
-[✓] Documentation
-[✓] Performance Improvement / Complexity Study
-[✓] Tests
-[✓] Refactoring / Maintenance
+- [x] Documentation
+- [x] Performance Improvement / Complexity Study
+- [x] Tests
 
 ## Changes Made
 - `exercises/practice/clock/.meta/example.c`: Added precise invariant, precondition/postcondition, and piecewise complexity comments adjacent to `normalize_clock`.
@@ -40,30 +39,28 @@ Fixes: #45
   - Size 2 (`201, 3001`): 6 operations ($O(1)$)
   - Size 3 (`-121, -5810`): 317 operations ($O(k_m + k_h)$)
 - **Measured Algorithm Runtime (Median ns/call)**:
-  - Size 1: 1.29 ns/call
-  - Size 2: 1.35 ns/call
-  - Size 3: 115.82 ns/call
-- **Infrastructure Overhead**: Compilation overhead ~84-102 ms, process startup ~140-160 ms (isolated from algorithm work).
+  - Size 1: 1.26 ns/call
+  - Size 2: 1.37 ns/call
+  - Size 3: 119.56 ns/call
+- **Infrastructure Overhead**: Compilation overhead ~85 ms, process startup ~146 ms (isolated from algorithm work).
 
 ## Done When Checklist
-[✓] The named cases (so comments can be added in a "comment" key.) and all other enabled cases pass against the reference; the learner stub is still unsolved.
-[✓] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
-[✓] The cost statement distinguishes algorithm work from process-startup or compilation time.
-[✓] All measured inputs satisfy the specification; correctness is asserted before timing and no speedup is claimed without measurements.
+- [x] The named cases (so comments can be added in a "comment" key.) and all other enabled cases pass against the reference; the learner stub is still unsolved.
+- [x] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
+- [x] The cost statement distinguishes algorithm work from process-startup or compilation time.
+- [x] All measured inputs satisfy the specification; correctness is asserted before timing and no speedup is claimed without measurements.
 
 ## Submission Checklist
-[✓] Complete this task and its checks.
-[✓] Add the required evidence and link your pull request here.
-[✓] Select this S-AI-Projects fork as the PR base repository.
-[✓] Request instructor review.
+- [x] Complete this task and its checks.
+- [x] Add the required evidence and link your pull request here.
+- [x] Select this S-AI-Projects fork as the PR base repository.
+- [x] Request instructor review.
+- [x] Keep this PR focused on this task. Do not submit assignment PRs to the upstream repository.
 
 ## General PR Checklist
-[✓] I have tested my changes locally.
-[✓] I have added or updated tests, if needed.
-[✓] I have updated documentation, if needed.
-[✓] I have followed the project's coding guidelines.
-[✓] I have run the relevant tests and checks.
-[✓] I have addressed previous review feedback, if applicable.
-
-## Additional Notes
-All criteria in the "Done when" and "Submission" checklists for task R48-T045 are fully satisfied.
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
