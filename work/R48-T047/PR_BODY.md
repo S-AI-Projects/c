@@ -16,13 +16,8 @@ Fixes: #47
 
 ## Type of Change
 - [x] Documentation
-- [ ] Bug Fix
-- [ ] New Feature
-- [ ] UI/UX Improvement
-- [ ] Performance Improvement
 - [x] Tests
 - [x] Refactoring / Maintenance
-- [ ] CI/CD
 
 ## Changes Made
 - `exercises/practice/nucleotide-count/.docs/hints.md`: Added comprehensive C-specific guidance comparing array lengths, null termination, and caller/callee memory ownership, citing `example.c#L16`, providing an executable standalone micro-example with expected outputs, explaining learner pitfalls, and linking official C99, cppreference, and POSIX language standards.
