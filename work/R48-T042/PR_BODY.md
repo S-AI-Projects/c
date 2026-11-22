@@ -27,18 +27,32 @@ Fixes: #42
 - Substituted the reference implementation (`.meta/example.c`, `.meta/example.h`) only within an isolated temporary directory and verified all 19 tests pass via `make test` with 0 failures and 0 ignored.
 - Saved execution evidence, canonical counts, and tool versions in `work/R48-T042/results.json`, `work/R48-T042/check_output.txt`, `work/R48-T042/expected_vs_actual.json`, `work/R48-T042/inputs.json`, and `work/R48-T042/tool_versions.txt`.
 
-## Testing
+## Testing & Verification Results
 - Ran `python3 work/R48-T042/check.py` and `python3 tools/course_checks/r48-t042.py`.
-- Verified 19/19 tests passed with 0 failures and 0 ignored against reference implementation.
-- Verified learner stub in working tree (`linked_list.c`, `linked_list.h`) remains unsolved.
-- Verified two fresh temporary generations yield identical `tests.toml` after timestamp normalization with 0 cases dropped.
-- Verified `comment` key is preserved across `configlet sync`.
+- **19/19 tests passed** with 0 failures and 0 ignored against reference implementation.
+- Learner stub in working tree (`linked_list.c`, `linked_list.h`) remains unsolved.
+- Two fresh temporary generations yield identical `tests.toml` after timestamp normalization with 0 cases dropped.
+- Preserved `comment` key verified across `configlet sync`.
 
-## Checklist
+## Done When Checklist
+- [x] The named cases (so comments can be added in a "comment" key.) and all other enabled cases pass against the reference; the learner stub is still unsolved.
+- [x] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
+- [x] Two generations yield the same tests after the documented timestamp normalization; no case is silently dropped.
+- [x] The maintenance page identifies the source of the three cases (so comments can be added in a "comment" key.) and the command that reproduces them.
+
+## Submission Checklist
+- [x] Complete this task and its checks.
+- [x] Add the required evidence and link your pull request here.
+- [x] Select this S-AI-Projects fork as the PR base repository.
+- [x] Request instructor review.
+
+## General PR Checklist
 - [x] I have tested my changes locally.
 - [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
 - [x] I have followed the project's coding guidelines.
 - [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
 
 ## Additional Notes
-All criteria in the "Done when" checklist for task R48-T042 are fully satisfied.
+All criteria in the "Done when" and "Submission" checklists for task R48-T042 are fully satisfied and verified.
