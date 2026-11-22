@@ -1,0 +1,48 @@
+{
+  "learner_stub_unsolved": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "canonical_test_suite": {
+    "expected_tests_run": 5,
+    "actual_tests_run": 5,
+    "expected_failures": 0,
+    "actual_failures": 0,
+    "expected_ignored": 0,
+    "actual_ignored": 0,
+    "expected_returncode": 0,
+    "actual_returncode": 0,
+    "memcheck_passed": true,
+    "pass": true
+  },
+  "micro_example_assertions": {
+    "output_1": {
+      "expected": "Output 1 (valid): A:3",
+      "actual": "Output 1 (valid): A:3",
+      "pass": true
+    },
+    "output_2": {
+      "expected": "Output 2 (invalid):",
+      "actual": "Output 2 (invalid):",
+      "pass": true
+    },
+    "hints_agreement": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  },
+  "guidance_checks": {
+    "constructs_verified": {
+      "array_lengths": true,
+      "null_termination": true,
+      "caller_callee_ownership": true,
+      "calloc_construct": true,
+      "free_function": true,
+      "reference_line_citation": true,
+      "language_reference_link": true
+    },
+    "pass": true
+  }
+}

@@ -1,0 +1,11 @@
+======================================================================
+Task R48-T047: Add C-specific guidance for nucleotide-count
+======================================================================
+[PASS] Working tree stubs check: Working tree stubs remain completely unsolved
+[PASS] Reference test suite: 5 tests passed, 0 failures, 0 ignored, memory clean
+[PASS] Micro-example compiled & executed cleanly under ASan
+       Output 1 (valid): A:3
+       Output 2 (invalid):
+[PASS] Both micro-example outputs agree with published hint in hints.md
+[PASS] Guidance document verifies all constructs (array lengths, null termination, memory ownership)
+[PASS] tests.toml comments preserved for all 5 canonical cases
