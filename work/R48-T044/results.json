@@ -1,0 +1,42 @@
+{
+  "task_id": "R48-T044",
+  "exercise": "crypto-square",
+  "tools": {
+    "python": "3.15.2",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "make": "GNU Make 3.81",
+    "configlet": "4.0.3"
+  },
+  "learner_stub_unsolved": true,
+  "tests_toml_summary": {
+    "total_cases": 9,
+    "descriptions_recreated": 9,
+    "reimplements_recreated": 1,
+    "other_keys_preserved": 1
+  },
+  "mstrlen_refactor": {
+    "renamed_variable": "normalized_len",
+    "previous_variable": "i",
+    "invariant_comment": "Invariant: only alphanumeric characters are retained in normalized plaintext, which determines the crypto-square rectangle dimensions (r x c).",
+    "interface_preserved": true
+  },
+  "test_results": {
+    "tests_run": 8,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_empty_text_res_in_an_empty_ciphertext",
+      "test_normalization_results_in_empty_plaintext",
+      "test_lowercase",
+      "test_remove_spaces",
+      "test_remove_punctuation",
+      "test_9_char_plaintext_gives_3_chunks_of_3_chars",
+      "test_8_char_plaintext_gives_3_chunks_last_one_with_trailing_space",
+      "test_54_char_plaintext_gives_8_chunks_last_two_with_trailing_spaces"
+    ],
+    "memcheck_pass": true,
+    "exit_code": 0
+  },
+  "behavioral_equivalence": true,
+  "status": "SUCCESS"
+}

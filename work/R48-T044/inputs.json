@@ -1,0 +1,117 @@
+{
+  "exercise": "crypto-square",
+  "exercise_path": "exercises/practice/crypto-square",
+  "config_json": {
+    "authors": [
+      "vlzware"
+    ],
+    "contributors": [
+      "h-3-0",
+      "jagdish-15",
+      "patricksjackson",
+      "QLaille",
+      "ryanplusplus",
+      "sjwarner",
+      "wolf99"
+    ],
+    "files": {
+      "solution": [
+        "crypto_square.c",
+        "crypto_square.h"
+      ],
+      "test": [
+        "test_crypto_square.c"
+      ],
+      "example": [
+        ".meta/example.c",
+        ".meta/example.h"
+      ]
+    },
+    "blurb": "Implement the classic method for composing secret messages called a square code.",
+    "source": "J Dalbey's Programming Practice problems",
+    "source_url": "https://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html"
+  },
+  "files_checked": {
+    "instructions": "exercises/practice/crypto-square/.docs/instructions.md",
+    "tests_toml": "exercises/practice/crypto-square/.meta/tests.toml",
+    "example_c": "exercises/practice/crypto-square/.meta/example.c",
+    "example_h": "exercises/practice/crypto-square/.meta/example.h",
+    "solution_c": "exercises/practice/crypto-square/crypto_square.c",
+    "solution_h": "exercises/practice/crypto-square/crypto_square.h",
+    "test_c": "exercises/practice/crypto-square/test_crypto_square.c"
+  },
+  "named_cases_trace": [
+    {
+      "case_name": "empty plaintext results in an empty ciphertext",
+      "input": "",
+      "normalized_chars": "",
+      "mstrlen": 0,
+      "cols": 0,
+      "rows": 0,
+      "expected_output": ""
+    },
+    {
+      "case_name": "normalization results in empty plaintext",
+      "input": "... --- ...",
+      "normalized_chars": "",
+      "mstrlen": 0,
+      "cols": 0,
+      "rows": 0,
+      "expected_output": ""
+    },
+    {
+      "case_name": "Lowercase",
+      "input": "A",
+      "normalized_chars": "a",
+      "mstrlen": 1,
+      "cols": 1,
+      "rows": 1,
+      "expected_output": "a"
+    },
+    {
+      "case_name": "Remove spaces",
+      "input": "  b ",
+      "normalized_chars": "b",
+      "mstrlen": 1,
+      "cols": 1,
+      "rows": 1,
+      "expected_output": "b"
+    },
+    {
+      "case_name": "Remove punctuation",
+      "input": "@1,%!",
+      "normalized_chars": "1",
+      "mstrlen": 1,
+      "cols": 1,
+      "rows": 1,
+      "expected_output": "1"
+    },
+    {
+      "case_name": "9 character plaintext results in 3 chunks of 3 characters",
+      "input": "This is fun!",
+      "normalized_chars": "thisisfun",
+      "mstrlen": 9,
+      "cols": 3,
+      "rows": 3,
+      "expected_output": "tsf hiu isn"
+    },
+    {
+      "case_name": "8 character plaintext results in 3 chunks, the last one with a trailing space",
+      "input": "Chill out.",
+      "normalized_chars": "chillout",
+      "mstrlen": 8,
+      "cols": 3,
+      "rows": 3,
+      "expected_output": "clu hlt io "
+    },
+    {
+      "case_name": "54 character plaintext results in 8 chunks, the last two with trailing spaces",
+      "input": "If man was meant to stay on the ground, god would have given us roots.",
+      "normalized_chars": "ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots",
+      "mstrlen": 54,
+      "cols": 8,
+      "rows": 7,
+      "expected_output": "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
+    }
+  ]
+}
