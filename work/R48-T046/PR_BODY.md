@@ -21,10 +21,10 @@ Comparative study, implementation, and architectural analysis of two distinct ap
 Fixes: #46
 
 ## Type of Change
-[✓] Documentation
-[✓] Performance Improvement / Complexity Study
-[✓] Tests
-[✓] Refactoring / Maintenance
+- [x] Documentation
+- [x] Performance Improvement / Complexity Study
+- [x] Tests
+- [x] Refactoring / Maintenance
 
 ## Changes Made
 - `exercises/practice/run-length-encoding/.docs/hints.md`: Created comprehensive approach-selection guide explaining data representation, control flow, trade-offs, and small worked examples for both encoding and decoding without exposing a full solution listing.
@@ -47,24 +47,24 @@ Fixes: #46
 - **Infrastructure Overhead**: Compilation overhead ~102.55 ms, process startup ~91.09 ms (isolated from algorithm work).
 
 ## Done When Checklist
-[✓] The named cases (so comments can be added in a "comment" key.) and all other enabled cases pass against the reference; the learner stub is still unsolved.
-[✓] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
-[✓] Two implementations pass the same enabled test cases; renaming variables does not count as a second approach.
-[✓] The hint contains an exercise-specific worked example and a justified trade-off, while avoiding a full solution listing.
+- [x] The named cases (so comments can be added in a "comment" key.) and all other enabled cases pass against the reference; the learner stub is still unsolved.
+- [x] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
+- [x] Two implementations pass the same enabled test cases; renaming variables does not count as a second approach.
+- [x] The hint contains an exercise-specific worked example and a justified trade-off, while avoiding a full solution listing.
 
 ## Submission Checklist
-[✓] Complete this task and its checks.
-[✓] Add the required evidence and link your pull request here.
-[✓] Select this S-AI-Projects fork as the PR base repository.
-[✓] Request instructor review.
+- [x] Complete this task and its checks.
+- [x] Add the required evidence and link your pull request here.
+- [x] Select this S-AI-Projects fork as the PR base repository.
+- [x] Request instructor review.
 
 ## General PR Checklist
-[✓] I have tested my changes locally.
-[✓] I have added or updated tests, if needed.
-[✓] I have updated documentation, if needed.
-[✓] I have followed the project's coding guidelines.
-[✓] I have run the relevant tests and checks.
-[✓] I have addressed previous review feedback, if applicable.
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
 
 ## Additional Notes
 All criteria in the "Done when" and "Submission" checklists for task R48-T046 are fully satisfied.
