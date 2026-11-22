@@ -1,0 +1,48 @@
+{
+  "task_id": "R48-T049",
+  "exercise": "exercises/practice/zebra-puzzle",
+  "pinned_reference": "exercises/practice/zebra-puzzle/.meta/example.c#L9",
+  "learner_stub_unsolved": true,
+  "scenarios": {
+    "real_reference": {
+      "runner_exit_code": 0,
+      "make_returncode": 0,
+      "tests_run": 2,
+      "failures": 0,
+      "ignored": 0,
+      "verdict": "SUCCESS"
+    },
+    "deliberately_failing_reference": {
+      "runner_exit_code": 2,
+      "make_returncode": 2,
+      "tests_run": 2,
+      "failures": 1,
+      "ignored": 0,
+      "verdict": "FAILURE_PROPAGATED"
+    },
+    "empty_test_selection": {
+      "runner_exit_code": 1,
+      "make_returncode": 2,
+      "tests_run": 0,
+      "failures": 0,
+      "ignored": 0,
+      "verdict": "ZERO_TESTS_REJECTED"
+    }
+  },
+  "hash_preservation": {
+    "zebra_puzzle.c": {
+      "sha256": "fea05bdb6415d98b7e47230459a43bb228b78f49ce8b79a7a9ebb60b7a19c4a4",
+      "preserved": true
+    },
+    "zebra_puzzle.h": {
+      "sha256": "2a72bae85ef4273812a6cd469bceb2a4bd75c4ee3303d63db8c160738fe70448",
+      "preserved": true
+    }
+  },
+  "generator_and_sync_rules": {
+    "water_desc_recreated": true,
+    "zebra_desc_recreated": true,
+    "comment_preserved": true,
+    "sync_preserved": true
+  }
+}
