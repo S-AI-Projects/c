@@ -1,0 +1,39 @@
+{
+  "exercise": "exercises/practice/zebra-puzzle",
+  "pinned_reference": "exercises/practice/zebra-puzzle/.meta/example.c#L9",
+  "reference_commit": "ffe5457101796886a272d6ebbeba8f849229c35a",
+  "solution_files": [
+    "zebra_puzzle.c",
+    "zebra_puzzle.h"
+  ],
+  "test_files": [
+    "test_zebra_puzzle.c"
+  ],
+  "example_files": [
+    ".meta/example.c",
+    ".meta/example.h"
+  ],
+  "test_scenarios": [
+    {
+      "id": "scenario_1_real_reference",
+      "description": "Full reference implementation with all tests enabled",
+      "reference_override": null,
+      "empty_selection": false,
+      "expected_exit_status": 0
+    },
+    {
+      "id": "scenario_2_failing_reference",
+      "description": "Deliberately failing reference returning wrong water drinker (Ukrainian)",
+      "reference_override": "drinks_water = 'Ukrainian'",
+      "empty_selection": false,
+      "expected_exit_status": 2
+    },
+    {
+      "id": "scenario_3_empty_selection",
+      "description": "Empty test selection with 0 RUN_TEST calls",
+      "reference_override": null,
+      "empty_selection": true,
+      "expected_exit_status": 1
+    }
+  ]
+}
