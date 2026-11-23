@@ -1,0 +1,53 @@
+{
+  "learner_stub_unsolved": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "tests_toml_cases": {
+    "expected_total": 9,
+    "actual_total": 9,
+    "expected_descriptions": 9,
+    "actual_descriptions": 9,
+    "expected_reimplements": 1,
+    "actual_reimplements": 1,
+    "pass": true
+  },
+  "mstrlen_readability_refactor": {
+    "ambiguous_counter_renamed": {
+      "expected": "normalized_len",
+      "actual": "normalized_len",
+      "pass": true
+    },
+    "invariant_comment_present": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "public_api_preserved": {
+      "expected": "char *ciphertext(const char *input)",
+      "actual": "char *ciphertext(const char *input)",
+      "pass": true
+    }
+  },
+  "behavioral_equivalence": {
+    "original_tests_passed": 8,
+    "refactored_tests_passed": 8,
+    "original_failures": 0,
+    "refactored_failures": 0,
+    "outputs_match": true,
+    "pass": true
+  },
+  "scratch_test_run": {
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_tests_run": 8,
+    "actual_tests_run": 8,
+    "expected_failures": 0,
+    "actual_failures": 0,
+    "expected_ignored": 0,
+    "actual_ignored": 0,
+    "memcheck_exit_code": 0,
+    "pass": true
+  }
+}

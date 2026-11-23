@@ -4,17 +4,18 @@
 #include <stdio.h>
 #include <math.h>
 
-/* mstrlen: get the length of input counting only alnums */
+/* Invariant: only alphanumeric characters are retained in normalized plaintext,
+ * which determines the crypto-square rectangle dimensions (r x c). */
 static size_t mstrlen(const char *input)
 {
-   size_t i = 0;
+   size_t normalized_len = 0;
    while (*input != '\0') {
       if (isalnum(*input))
-         i++;
+         normalized_len++;
       input++;
    }
 
-   return i;
+   return normalized_len;
 }
 
 /* get_cols_and_rows: calculate columns and rows for the input square */
