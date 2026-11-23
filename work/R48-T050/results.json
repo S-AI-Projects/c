@@ -1,0 +1,29 @@
+{
+  "task_id": "R48-T050",
+  "exercise": "exercises/practice/isogram",
+  "reference_source": "exercises/practice/isogram/.meta/example.c#L6",
+  "total_cases_executed": 15,
+  "total_failures": 0,
+  "total_ignored": 0,
+  "decision_table_cases_count": 15,
+  "comment_key_verified": true,
+  "learner_stub_unsolved": true,
+  "passed_tests": [
+    "test_empty_string",
+    "test_null",
+    "test_isogram_with_only_lower_case_characters",
+    "test_word_with_one_duplicated_character",
+    "test_word_with_one_duplicated_character_from_end_of_alphabet",
+    "test_longest_reported_english_isogram",
+    "test_word_with_duplicated_letter_in_mixed_case",
+    "test_word_with_duplicated_letter_in_mixed_case_lowercase_first",
+    "test_hypothetical_isogrammic_word_with_hyphen",
+    "test_hypothetical_word_with_duplicated_character_following_hyphen",
+    "test_isogram_with_duplicated_hyphen",
+    "test_made_up_name_that_is_an_isogram",
+    "test_duplicated_character_in_the_middle",
+    "test_same_first_and_last_characters",
+    "test_word_with_duplicated_character_and_with_two_hyphens"
+  ],
+  "check_status": "SUCCESS"
+}

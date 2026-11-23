@@ -1,0 +1,163 @@
+{
+  "task_id": "R48-T050",
+  "exercise": "exercises/practice/isogram",
+  "reference_source": "exercises/practice/isogram/.meta/example.c#L6",
+  "total_cases": 15,
+  "cases": [
+    {
+      "test_name": "test_empty_string",
+      "condition": "Empty string",
+      "input": "",
+      "expected": true,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "a0e97d2d-669e-47c7-8134-518a1e2c4555",
+      "notes": "0 letters, vacuously an isogram."
+    },
+    {
+      "test_name": "test_null",
+      "condition": "Null pointer",
+      "input": null,
+      "expected": false,
+      "contract_status": "Specified (C Track Defensive)",
+      "uuid": null,
+      "notes": "Defensive pointer validation in C; safely returns false."
+    },
+    {
+      "test_name": "test_isogram_with_only_lower_case_characters",
+      "condition": "Lowercase isogram",
+      "input": "isogram",
+      "expected": true,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "9a001b50-f194-4143-bc29-2af5ec1ef652",
+      "notes": "All lowercase letters unique."
+    },
+    {
+      "test_name": "test_word_with_one_duplicated_character",
+      "condition": "Single duplicated character",
+      "input": "eleven",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "8ddb0ca3-276e-4f8b-89da-d95d5bae78a4",
+      "notes": "Repeated letter 'e'."
+    },
+    {
+      "test_name": "test_word_with_one_duplicated_character_from_end_of_alphabet",
+      "condition": "Duplicated character from end of alphabet",
+      "input": "zzyzx",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "6450b333-cbc2-4b24-a723-0b459b34fe18",
+      "notes": "Repeated letter 'z'."
+    },
+    {
+      "test_name": "test_longest_reported_english_isogram",
+      "condition": "Longest reported English isogram",
+      "input": "subdermatoglyphic",
+      "expected": true,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "a15ff557-dd04-4764-99e7-02cc1a385863",
+      "notes": "17 distinct letters."
+    },
+    {
+      "test_name": "test_word_with_duplicated_letter_in_mixed_case",
+      "condition": "Duplicated character in mixed case (upper first)",
+      "input": "Alphabet",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "f1a7f6c7-a42f-4915-91d7-35b2ea11c92e",
+      "notes": "Case-insensitive match 'A' and 'a'."
+    },
+    {
+      "test_name": "test_word_with_duplicated_letter_in_mixed_case_lowercase_first",
+      "condition": "Duplicated character in mixed case (lower first)",
+      "input": "alphAbet",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "14a4f3c1-3b47-4695-b645-53d328298942",
+      "notes": "Case-insensitive match 'a' and 'A'."
+    },
+    {
+      "test_name": "test_hypothetical_isogrammic_word_with_hyphen",
+      "condition": "Hypothetical isogrammic word with hyphen",
+      "input": "thumbscrew-japingly",
+      "expected": true,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "423b850c-7090-4a8a-b057-97f1cadd7c42",
+      "notes": "Hyphen ignored; letters unique."
+    },
+    {
+      "test_name": "test_hypothetical_word_with_duplicated_character_following_hyphen",
+      "condition": "Duplicated character following hyphen",
+      "input": "thumbscrew-jappingly",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "93dbeaa0-3c5a-45c2-8b25-428b8eacd4f2",
+      "notes": "Repeated letter 'p'."
+    },
+    {
+      "test_name": "test_isogram_with_duplicated_hyphen",
+      "condition": "Isogram with duplicated hyphen",
+      "input": "six-year-old",
+      "expected": true,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "36b30e5c-173f-49c6-a515-93a3e825553f",
+      "notes": "Multiple hyphens allowed to appear repeatedly."
+    },
+    {
+      "test_name": "test_made_up_name_that_is_an_isogram",
+      "condition": "Isogram with multiple spaces and mixed case",
+      "input": "Emily Jung Schwartzkopf",
+      "expected": true,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "cdabafa0-c9f4-4c1f-b142-689c6ee17d93",
+      "notes": "Spaces allowed repeatedly; all 21 letters distinct."
+    },
+    {
+      "test_name": "test_duplicated_character_in_the_middle",
+      "condition": "Duplicated character in middle",
+      "input": "accentor",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "5fc61048-d74e-48fd-bc34-abfc21552d4d",
+      "notes": "Repeated letter 'c'."
+    },
+    {
+      "test_name": "test_same_first_and_last_characters",
+      "condition": "Same first and last characters",
+      "input": "angola",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "310ac53d-8932-47bc-bbb4-b2b94f25a83e",
+      "notes": "Repeated letter 'a' at indices 0 and 5."
+    },
+    {
+      "test_name": "test_word_with_duplicated_character_and_with_two_hyphens",
+      "condition": "Duplicated character with multiple hyphens",
+      "input": "up-to-date",
+      "expected": false,
+      "contract_status": "Specified (Canonical)",
+      "uuid": "0d0b8644-0a1e-4a31-a432-2b3ee270d847",
+      "notes": "Hyphens allowed, but 't' is duplicated."
+    }
+  ],
+  "unspecified_categories": [
+    {
+      "category": "Non-ASCII / UTF-8 multi-byte characters",
+      "sample_input": "caf\u00e9",
+      "contract_status": "Outside Exercise Contract",
+      "statement": "The specification assumes ASCII English alphabet. UTF-8 multi-byte characters are unspecified."
+    },
+    {
+      "category": "Numeric digits and symbols",
+      "sample_input": "isogram123!",
+      "contract_status": "Outside Exercise Contract",
+      "statement": "Digits and punctuation outside spaces and hyphens are not part of the problem domain."
+    },
+    {
+      "category": "Unterminated / invalid buffers",
+      "sample_input": "wild pointer",
+      "contract_status": "Outside Exercise Contract",
+      "statement": "Passing invalid or non-null-terminated pointers is undefined behavior under standard C contract."
+    }
+  ]
+}

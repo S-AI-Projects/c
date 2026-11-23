@@ -1,0 +1,27 @@
+Task R48-T050 Verification Log
+========================================
+Executed: 15 tests
+Failures: 0
+Ignored:  0
+
+Unity Output:
+Compiling tests.out
+./test_isogram.c:107:test_empty_string:PASS
+./test_isogram.c:108:test_null:PASS
+./test_isogram.c:109:test_isogram_with_only_lower_case_characters:PASS
+./test_isogram.c:110:test_word_with_one_duplicated_character:PASS
+./test_isogram.c:111:test_word_with_one_duplicated_character_from_end_of_alphabet:PASS
+./test_isogram.c:112:test_longest_reported_english_isogram:PASS
+./test_isogram.c:113:test_word_with_duplicated_letter_in_mixed_case:PASS
+./test_isogram.c:114:test_word_with_duplicated_letter_in_mixed_case_lowercase_first:PASS
+./test_isogram.c:115:test_hypothetical_isogrammic_word_with_hyphen:PASS
+./test_isogram.c:116:test_hypothetical_word_with_duplicated_character_following_hyphen:PASS
+./test_isogram.c:117:test_isogram_with_duplicated_hyphen:PASS
+./test_isogram.c:118:test_made_up_name_that_is_an_isogram:PASS
+./test_isogram.c:119:test_duplicated_character_in_the_middle:PASS
+./test_isogram.c:120:test_same_first_and_last_characters:PASS
+./test_isogram.c:121:test_word_with_duplicated_character_and_with_two_hyphens:PASS
+
+-----------------------
+15 Tests 0 Failures 0 Ignored 
+OK
