@@ -1,0 +1,40 @@
+{
+  "exercise": "linked-list",
+  "canonical_cases_count": 19,
+  "config_json": {
+    "authors": [
+      "wolf99"
+    ],
+    "contributors": [
+      "patricksjackson",
+      "QLaille",
+      "ryanplusplus",
+      "siebenschlaefer"
+    ],
+    "files": {
+      "solution": [
+        "linked_list.c",
+        "linked_list.h"
+      ],
+      "test": [
+        "test_linked_list.c"
+      ],
+      "example": [
+        ".meta/example.c",
+        ".meta/example.h"
+      ]
+    },
+    "blurb": "Implement a doubly linked list.",
+    "source": "Classic computer science topic"
+  },
+  "files_checked": {
+    "instructions": "exercises/practice/linked-list/.docs/instructions.md",
+    "tests_toml": "exercises/practice/linked-list/.meta/tests.toml",
+    "example_c": "exercises/practice/linked-list/.meta/example.c",
+    "example_h": "exercises/practice/linked-list/.meta/example.h",
+    "stub_c": "exercises/practice/linked-list/linked_list.c",
+    "stub_h": "exercises/practice/linked-list/linked_list.h",
+    "test_c": "exercises/practice/linked-list/test_linked_list.c",
+    "maintenance_doc": "docs/maintenance/linked-list.md"
+  }
+}

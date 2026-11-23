@@ -4,6 +4,7 @@
 
 [7f7e3987-b954-41b8-8084-99beca08752c]
 description = "pop gets element from the list"
+comment = "test_pop_gets_element_from_the_list: canonical stepping stone case verifying list_push and list_pop; preserved across configlet sync so comments can be added in a \"comment\" key."
 
 [c3f67e5d-cfa2-4c3e-a18f-7ce999c3c885]
 description = "push/pop respectively add/remove at the end of the list"
