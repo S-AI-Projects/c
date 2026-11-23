@@ -1,0 +1,47 @@
+{
+  "task_id": "R48-T041",
+  "exercise": "darts",
+  "canonical_cases_count": 13,
+  "canonical_cases_included_before": 13,
+  "canonical_cases_included_after": 13,
+  "canonical_cases_excluded_before": 0,
+  "canonical_cases_excluded_after": 0,
+  "target_uuids": [
+    "9033f731-0a3a-4d9c-b1c0-34a1c8362afb",
+    "4c9f6ff4-c489-45fd-be8a-1fcb08b4d0ba",
+    "14378687-ee58-4c9b-a323-b089d5274be8"
+  ],
+  "config_json": {
+    "authors": [
+      "wolf99"
+    ],
+    "contributors": [
+      "ryanplusplus"
+    ],
+    "files": {
+      "solution": [
+        "darts.c",
+        "darts.h"
+      ],
+      "test": [
+        "test_darts.c"
+      ],
+      "example": [
+        ".meta/example.c",
+        ".meta/example.h"
+      ]
+    },
+    "blurb": "Calculate the points scored in a single toss of a Darts game.",
+    "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
+  },
+  "files_checked": {
+    "instructions": "exercises/practice/darts/.docs/instructions.md",
+    "tests_toml": "exercises/practice/darts/.meta/tests.toml",
+    "example_c": "exercises/practice/darts/.meta/example.c",
+    "example_h": "exercises/practice/darts/.meta/example.h",
+    "stub_c": "exercises/practice/darts/darts.c",
+    "stub_h": "exercises/practice/darts/darts.h",
+    "test_c": "exercises/practice/darts/test_darts.c",
+    "maintenance_doc": "docs/maintenance/darts.md"
+  }
+}

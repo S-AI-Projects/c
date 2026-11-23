@@ -1,0 +1,88 @@
+{
+  "task_id": "R48-T041",
+  "exercise": "darts",
+  "tools": {
+    "python": "3.15.2",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "make": "GNU Make 3.81",
+    "configlet": "4.0.3"
+  },
+  "learner_stub_unsolved": true,
+  "canonical_cases": {
+    "total": 13,
+    "included": 13,
+    "excluded": 0,
+    "target_rationales_verified": 3
+  },
+  "target_uuid_rationales": {
+    "9033f731-0a3a-4d9c-b1c0-34a1c8362afb": {
+      "description": "Missed target",
+      "test_function": "test_missed_target",
+      "comment": "test_missed_target: Evaluates Euclidean distance via sqrt(x*x + y*y) in <math.h>. With (-9.0F, 9.0F), distance is ~12.73 > 10.0 (OUTER_CIRCLE_RADIUS); C sequential comparison evaluates false for all concentric bounds and returns OFF_BOARD_SCORE (0).",
+      "matched_terms": [
+        "sqrt",
+        "math.h",
+        "10.0",
+        "off_board",
+        "relational",
+        "distance",
+        "0"
+      ],
+      "included": true
+    },
+    "4c9f6ff4-c489-45fd-be8a-1fcb08b4d0ba": {
+      "description": "On the outer circle",
+      "test_function": "test_on_the_outer_circle",
+      "comment": "test_on_the_outer_circle: Evaluates boundary inclusivity at exact outer perimeter (0.0F, 10.0F) with distance 10.0F == 10.0F. C relational comparison (distance <= OUTER_CIRCLE_RADIUS) evaluates true, awarding OUTER_CIRCLE_SCORE (1).",
+      "matched_terms": [
+        "outer_circle",
+        "<=",
+        "10.0",
+        "boundary",
+        "1",
+        "relational"
+      ],
+      "included": true
+    },
+    "14378687-ee58-4c9b-a323-b089d5274be8": {
+      "description": "On the middle circle",
+      "test_function": "test_on_the_middle_circle",
+      "comment": "test_on_the_middle_circle: Tests negative coordinate squaring and middle circle boundary at (-5.0F, 0.0F) with distance 5.0F == 5.0F. C relational comparison (distance <= MIDDLE_CIRCLE_RADIUS) evaluates true, awarding MIDDLE_CIRCLE_SCORE (5).",
+      "matched_terms": [
+        "middle_circle",
+        "<=",
+        "5.0",
+        "-5.0",
+        "squaring",
+        "negative",
+        "5"
+      ],
+      "included": true
+    }
+  },
+  "test_results": {
+    "expected_tests": 13,
+    "actual_tests_run": 13,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_missed_target",
+      "test_on_the_outer_circle",
+      "test_on_the_middle_circle",
+      "test_on_the_inner_circle",
+      "test_exactly_on_center",
+      "test_near_the_center",
+      "test_just_within_the_inner_circle",
+      "test_just_outside_the_inner_circle",
+      "test_just_within_the_middle_circle",
+      "test_just_outside_the_middle_circle",
+      "test_just_within_the_outer_circle",
+      "test_just_outside_the_outer_circle",
+      "test_asymmetric_position_between_the_inner_and_middle_circles"
+    ],
+    "exit_code": 0
+  },
+  "configlet_comment_preservation": true,
+  "maintenance_doc_verified": true,
+  "status": "SUCCESS"
+}
