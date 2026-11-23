@@ -14,13 +14,8 @@ Fixes: #43
 
 ## Type of Change
 - [x] Documentation
-- [ ] Bug Fix
-- [ ] New Feature
-- [ ] UI/UX Improvement
-- [ ] Performance Improvement
 - [x] Tests
 - [x] Refactoring / Maintenance
-- [ ] CI/CD
 
 ## Changes Made
 - Added `exercises/practice/variable-length-quantity/.docs/hints.md` providing debugging hints for zero-value encoding, multi-byte continuation conditions, and diagnostic inputs.
