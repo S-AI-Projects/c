@@ -29,9 +29,9 @@ Map and verify the maintained files and exercise metadata for `exercises/practic
 Fixes: #48
 
 ## Type of Change
-[✓] Documentation
-[✓] Metadata Verification / Maintenance
-[✓] Tests
+- [x] Documentation
+- [x] Metadata Verification / Maintenance
+- [x] Tests
 
 ## Changes Made
 - `docs/maintenance/word-count.md` & `exercises/practice/word-count/.meta/MAINTENANCE.md`: Added comprehensive exercise file-role map, runner discovery explanation, maintained vs generated file classification, key handling rules, canonical case-to-output mapping table, isolated verification procedure, reproducible commands, and completion checklists.
@@ -60,22 +60,22 @@ Fixes: #48
   - All 14 tests reported `PASS`.
 
 ## Done When Checklist
-[✓] The named cases (- Recreate every description key/value pair; - Recreate every reimplements key/value pair, where they exist in problem-specifications; - Preserve any other key/value pair) and all other enabled cases pass against the reference; the learner stub is still unsolved.
-[✓] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
-[✓] The real config passes; all three deliberately invalid metadata fixtures fail for the intended reason.
-[✓] The maintenance document names the real stub, reference and test paths and distinguishes generated artifacts.
+- [x] The named cases (- Recreate every description key/value pair; - Recreate every reimplements key/value pair, where they exist in problem-specifications; - Preserve any other key/value pair) and all other enabled cases pass against the reference; the learner stub is still unsolved.
+- [x] The check reports the number of executed cases and fails on a zero-test run, a non-zero child exit or an assertion failure.
+- [x] The real config passes; all three deliberately invalid metadata fixtures fail for the intended reason.
+- [x] The maintenance document names the real stub, reference and test paths and distinguishes generated artifacts.
 
 ## Submission Checklist
-[✓] Complete this task and its checks.
-[✓] Add the required evidence and link your pull request here.
-[✓] Select this S-AI-Projects fork as the PR base repository.
-[✓] Request instructor review.
-[✓] Keep this PR focused on this task. Do not submit assignment PRs to the upstream repository.
+- [x] Complete this task and its checks.
+- [x] Add the required evidence and link your pull request here.
+- [x] Select this S-AI-Projects fork as the PR base repository.
+- [x] Request instructor review.
+- [x] Keep this PR focused on this task. Do not submit assignment PRs to the upstream repository.
 
 ## General PR Checklist
-[✓] I have tested my changes locally.
-[✓] I have added or updated tests, if needed.
-[✓] I have updated documentation, if needed.
-[✓] I have followed the project's coding guidelines.
-[✓] I have run the relevant tests and checks.
-[✓] I have addressed previous review feedback, if applicable.
+- [x] I have tested my changes locally.
+- [x] I have added or updated tests, if needed.
+- [x] I have updated documentation, if needed.
+- [x] I have followed the project's coding guidelines.
+- [x] I have run the relevant tests and checks.
+- [x] I have addressed previous review feedback, if applicable.
