@@ -1,0 +1,54 @@
+{
+  "learner_stub_unsolved": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "real_metadata_validation": {
+    "expected": "PASS",
+    "actual": "PASS",
+    "pass": true
+  },
+  "fixtures": {
+    "missing_reference": {
+      "expected": "FileNotFoundError",
+      "actual": "FileNotFoundError",
+      "pass": true
+    },
+    "missing_test": {
+      "expected": "FileNotFoundError",
+      "actual": "FileNotFoundError",
+      "pass": true
+    },
+    "outside_exercise": {
+      "expected": "ValueError",
+      "actual": "ValueError",
+      "pass": true
+    }
+  },
+  "canonical_tests_toml": {
+    "expected_cases": 15,
+    "actual_cases": 15,
+    "recreated_description": true,
+    "recreated_reimplements": true,
+    "preserved_other_keys": true,
+    "two_generation_reproducibility": true,
+    "pass": true
+  },
+  "scratch_make_test": {
+    "expected_returncode": 0,
+    "actual_returncode": 0,
+    "expected_tests_run": 14,
+    "actual_tests_run": 14,
+    "expected_failures": 0,
+    "actual_failures": 0,
+    "expected_ignored": 0,
+    "actual_ignored": 0,
+    "pass": true
+  },
+  "maintenance_documentation": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "R48-T048",
+  "exercise": "exercises/practice/word-count",
+  "config_json_path": "exercises/practice/word-count/.meta/config.json",
+  "declared_files": {
+    "solution": [
+      "word_count.c",
+      "word_count.h"
+    ],
+    "test": [
+      "test_word_count.c"
+    ],
+    "example": [
+      ".meta/example.c"
+    ]
+  },
+  "discovery_routes": {
+    "tests_toml": {
+      "path": "exercises/practice/word-count/.meta/tests.toml",
+      "discovery_mechanism": "Discovered by convention: Exercism track tooling and test runner look at <track_root>/exercises/practice/<slug>/.meta/tests.toml to find canonical UUID specifications, comments, reimplements keys, and inclusion status.",
+      "total_cases": 15
+    },
+    "example_c": {
+      "path": "exercises/practice/word-count/.meta/example.c",
+      "discovery_mechanism": "Discovered via explicit metadata mapping: The runner parses <track_root>/exercises/practice/<slug>/.meta/config.json, reads files.example, and resolves '.meta/example.c' inside the exercise directory. For validation, the runner copies this file into the solution path to compile and run tests.",
+      "pinned_source": "exercises/practice/word-count/.meta/example.c#L9"
+    }
+  },
+  "fixtures_tested": [
+    "missing-reference (.meta/nonexistent_reference.c)",
+    "missing-test (test_nonexistent_word_count.c)",
+    "outside-exercise (../outside_solution.c)"
+  ],
+  "canonical_cases_count": 15
+}

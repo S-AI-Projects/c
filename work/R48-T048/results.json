@@ -1,0 +1,56 @@
+{
+  "task_id": "R48-T048",
+  "exercise": "exercises/practice/word-count",
+  "status": "SUCCESS",
+  "tools": {
+    "python": "3.15.2",
+    "cc": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "make": "GNU Make 3.81",
+    "configlet": "4.0.3"
+  },
+  "files_resolved": {
+    "solution": [
+      "/Users/alok/Desktop/S-Ai project/S-AI-Projects/exercises/practice/word-count/word_count.c",
+      "/Users/alok/Desktop/S-Ai project/S-AI-Projects/exercises/practice/word-count/word_count.h"
+    ],
+    "test": [
+      "/Users/alok/Desktop/S-Ai project/S-AI-Projects/exercises/practice/word-count/test_word_count.c"
+    ],
+    "example": [
+      "/Users/alok/Desktop/S-Ai project/S-AI-Projects/exercises/practice/word-count/.meta/example.c"
+    ]
+  },
+  "fixtures_passed": true,
+  "canonical_cases": {
+    "total": 15,
+    "enabled_tests": 14,
+    "excluded_cases": 1,
+    "reimplements_mapping": {
+      "4ff6c7d7-fcfc-43ef-b8e7-34ff1837a2d3": "4185a902-bdb0-4074-864c-f416e42a0f19"
+    }
+  },
+  "scratch_test_execution": {
+    "returncode": 0,
+    "executed_cases": 14,
+    "failures": 0,
+    "ignored": 0,
+    "passed_tests": [
+      "test_count_one_word",
+      "test_count_one_of_each_word",
+      "test_multiple_occurrences_of_a_word",
+      "test_handles_cramped_lists",
+      "test_handles_expanded_lists",
+      "test_ignore_punctuation",
+      "test_include_numbers",
+      "test_normalize_case",
+      "test_with_apostrophes",
+      "test_with_quotations",
+      "test_substrings_from_the_beginning",
+      "test_multiple_spaces_not_detected_as_a_word",
+      "test_alternating_word_separators_not_detected_as_a_word",
+      "test_quotation_for_word_with_apostrophe"
+    ]
+  },
+  "learner_stub_unsolved": true,
+  "maintenance_doc_verified": true
+}
