@@ -1,0 +1,41 @@
+{
+  "learner_stub_unsolved": {
+    "expected": true,
+    "actual": true,
+    "pass": true
+  },
+  "canonical_cases": {
+    "expected_total": 26,
+    "actual_total": 26,
+    "pass": true
+  },
+  "original_reference_test_run": {
+    "expected_exit_code": 0,
+    "actual_exit_code": 0,
+    "expected_tests_run": 26,
+    "actual_tests_run": 26,
+    "expected_failures": 0,
+    "actual_failures": 0,
+    "expected_ignored": 0,
+    "actual_ignored": 0,
+    "pass": true
+  },
+  "primary_mutant_test_run": {
+    "expected_exit_code": 2,
+    "actual_exit_code": 2,
+    "expected_rejected_test": "test_zero",
+    "actual_rejected_test": "test_zero",
+    "expected_assertion_message": "Expected 1 Was 0",
+    "actual_assertion_message": "Expected 1 Was 0",
+    "pass": true
+  },
+  "secondary_mutant_test_run": {
+    "expected_exit_code": 2,
+    "actual_exit_code": 2,
+    "expected_rejected_test": "test_smallest_double_byte",
+    "actual_rejected_test": "test_smallest_double_byte",
+    "expected_assertion_message": "Expected 2 Was 1",
+    "actual_assertion_message": "Expected 2 Was 1",
+    "pass": true
+  }
+}

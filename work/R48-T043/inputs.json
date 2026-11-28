@@ -1,0 +1,62 @@
+{
+  "exercise": "variable-length-quantity",
+  "task_id": "R48-T043",
+  "canonical_cases_count": 26,
+  "config_json": {
+    "authors": [
+      "Wiguwbe"
+    ],
+    "files": {
+      "solution": [
+        "variable_length_quantity.c",
+        "variable_length_quantity.h"
+      ],
+      "test": [
+        "test_variable_length_quantity.c"
+      ],
+      "example": [
+        ".meta/example.c",
+        ".meta/example.h"
+      ]
+    },
+    "blurb": "Implement variable length quantity encoding and decoding.",
+    "source": "A poor Splice developer having to implement MIDI encoding/decoding.",
+    "source_url": "https://splice.com"
+  },
+  "mutant_primary": {
+    "type": "loop_condition_pretest",
+    "description": "Replace post-condition do-while loop with pre-condition while (integer) loop",
+    "smallest_rejecting_input": {
+      "integers": [
+        0
+      ],
+      "input_len": 1
+    },
+    "rejecting_test_id": "35c9db2e-f781-4c52-b73b-8e76427defd0",
+    "rejecting_test_function": "test_zero"
+  },
+  "mutant_secondary": {
+    "type": "boundary_condition",
+    "description": "Replace while (integer) with while (integer > 0x7f)",
+    "smallest_rejecting_input": {
+      "integers": [
+        128
+      ],
+      "input_len": 1
+    },
+    "rejecting_test_id": "77b07086-bd3f-4882-8476-8dcafee79b1c",
+    "rejecting_test_function": "test_smallest_double_byte"
+  },
+  "files_checked": {
+    "instructions": "exercises/practice/variable-length-quantity/.docs/instructions.md",
+    "hints": "exercises/practice/variable-length-quantity/.docs/hints.md",
+    "tests_toml": "exercises/practice/variable-length-quantity/.meta/tests.toml",
+    "config_json": "exercises/practice/variable-length-quantity/.meta/config.json",
+    "example_c": "exercises/practice/variable-length-quantity/.meta/example.c",
+    "example_h": "exercises/practice/variable-length-quantity/.meta/example.h",
+    "stub_c": "exercises/practice/variable-length-quantity/variable_length_quantity.c",
+    "stub_h": "exercises/practice/variable-length-quantity/variable_length_quantity.h",
+    "test_c": "exercises/practice/variable-length-quantity/test_variable_length_quantity.c",
+    "maintenance_doc": "docs/maintenance/variable-length-quantity.md"
+  }
+}
